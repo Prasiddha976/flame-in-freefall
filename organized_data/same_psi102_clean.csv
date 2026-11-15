@@ -1,0 +1,5 @@
+experiment_id,mission_dataset,fuel_material,fuel_category,pressure_kpa,initial_o2_pct,final_o2_pct,delta_o2_pct,inert_n2_pct,co2_initial_pct,inert_he_pct,initial_size_mm,extinction_size_mm,burning_rate_mm2_s,extinction_time_s,termination_mode,co_initial_ppm,co_final_ppm,delta_co_ppm
+SAME_1,SAME (PSI-102),Teflon,Wire Insulation,101.325,21.0,21.0,0.0,79.0,0.04,0.0,2.0,0.0,0.03333333333333333,60.0,Thermal Pyrolysis,0.0,30.0,30.0
+SAME_2,SAME (PSI-102),Teflon,Wire Insulation,101.325,21.0,21.0,0.0,79.0,0.04,0.0,2.0,0.0,0.016666666666666666,60.0,Thermal Pyrolysis,0.0,15.0,15.0
+SAME_3,SAME (PSI-102),Teflon,Wire Insulation,101.325,21.0,21.0,0.0,79.0,0.04,0.0,2.0,0.0,0.03333333333333333,1200.0,Thermal Pyrolysis,0.0,30.0,30.0
+SAME_4,SAME (PSI-102),Teflon,Wire Insulation,101.325,21.0,21.0,0.0,79.0,0.04,0.0,2.0,0.0,0.03333333333333333,60.0,Thermal Pyrolysis,0.0,30.0,30.0

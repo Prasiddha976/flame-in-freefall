@@ -1,0 +1,396 @@
+experiment_id,mission_dataset,fuel_material,fuel_category,pressure_kpa,initial_o2_pct,final_o2_pct,delta_o2_pct,inert_n2_pct,co2_initial_pct,inert_he_pct,initial_size_mm,extinction_size_mm,burning_rate_mm2_s,extinction_time_s,termination_mode,co_initial_ppm,co_final_ppm,delta_co_ppm,fire_risk_level,fire_risk_label
+FLEX_20CAL08,FLEX (PSI-69),Methanol,Liquid Droplet,101.0180794,21.0,21.0,0.0,79.0,0.0,0.0,1.69,0.89,0.52,4.3,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_20CAL10,FLEX (PSI-69),Methanol,Liquid Droplet,101.591364,21.0,21.0,0.0,79.0,0.0,0.0,1.86,0.94,0.6,5.0,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_20CAL12,FLEX (PSI-69),Methanol,Liquid Droplet,101.8846724,21.0,21.0,0.0,79.0,0.0,0.0,1.61,0.92,0.58,3.2,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_30CAL02,FLEX (PSI-69),Methanol,Liquid Droplet,101.32472,21.0,21.0,0.0,79.0,0.0,0.0,2.06,1.76,0.6,7.64,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_30CAL03,FLEX (PSI-69),Methanol,Liquid Droplet,101.32472,21.0,21.0,0.0,79.0,0.0,0.0,1.92,0.81,0.48,6.34,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_40CAL01,FLEX (PSI-69),Methanol,Liquid Droplet,101.32472,21.0,21.0,0.0,79.0,0.0,0.0,2.54,1.53,0.51,9.6,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_20CAL13,FLEX (PSI-69),Heptane,Liquid Droplet,101.49803859999999,21.0,21.0,0.0,79.0,0.0,0.0,1.87,1.76,0.67,5.3,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_30CAL06,FLEX (PSI-69),Heptane,Liquid Droplet,101.64469279999999,21.0,21.0,0.0,79.0,0.0,0.0,2.95,1.76,0.79,14.8,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_256F002,FLEX (PSI-69),Methanol,Liquid Droplet,309.2670434,21.0,21.0,0.0,9.0,70.0,0.0,3.86,1.76,0.37,13.6,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_256R001,FLEX (PSI-69),Methanol,Liquid Droplet,309.1470536,21.0,21.0,0.0,9.0,70.0,0.0,3.03,1.76,0.4,16.5,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_256R002,FLEX (PSI-69),Methanol,Liquid Droplet,276.5364924,21.0,21.0,0.0,9.0,70.0,0.0,2.59,1.76,0.49,10.8,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_256F007,FLEX (PSI-69),Methanol,Liquid Droplet,274.05670319999996,21.0,21.0,0.0,9.0,70.0,0.0,3.7,1.76,0.5,11.3,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_256F008,FLEX (PSI-69),Methanol,Liquid Droplet,275.52324519999996,21.0,21.0,0.0,9.0,70.0,0.0,4.42,1.76,0.5,23.1,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_256F009,FLEX (PSI-69),Methanol,Liquid Droplet,276.25651619999996,21.0,21.0,0.0,9.0,70.0,0.0,1.66,1.0,0.53,3.4,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_240R003,FLEX (PSI-69),Methanol,Liquid Droplet,206.0758154,21.0,21.0,0.0,9.0,70.0,0.0,2.67,1.76,0.5,2.4,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_248F001,FLEX (PSI-69),Heptane,Liquid Droplet,207.1557236,21.0,21.0,0.0,9.0,70.0,0.0,2.74,1.77,0.61,8.1,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_196F001,FLEX (PSI-69),Heptane,Liquid Droplet,71.8738902,34.0,34.0,0.0,66.0,0.0,0.0,3.39,1.76,0.9,4.2,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_192F001,FLEX (PSI-69),Methanol,Liquid Droplet,71.927219,34.0,34.0,0.0,66.0,0.0,0.0,3.4,1.56,0.53,17.4,Completion,0.0,0.0,0.0,2,Critical
+FLEX_192F002,FLEX (PSI-69),Methanol,Liquid Droplet,72.0738732,34.0,34.0,0.0,66.0,0.0,0.0,3.49,0.95,0.66,17.8,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_192F003,FLEX (PSI-69),Methanol,Liquid Droplet,72.060541,34.0,34.0,0.0,66.0,0.0,0.0,3.5,1.76,0.65,18.2,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_196F002,FLEX (PSI-69),Heptane,Liquid Droplet,72.23385959999999,34.0,34.0,0.0,66.0,0.0,0.0,3.01,1.76,0.73,13.1,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_191R001,FLEX (PSI-69),Methanol,Liquid Droplet,71.6339106,30.0,30.0,0.0,70.0,0.0,0.0,2.6,0.59,0.65,10.3,Completion,0.0,0.0,0.0,2,Critical
+FLEX_191F001,FLEX (PSI-69),Methanol,Liquid Droplet,71.7805648,30.0,30.0,0.0,70.0,0.0,0.0,3.63,0.4,0.62,22.2,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_195F001,FLEX (PSI-69),Heptane,Liquid Droplet,72.0872054,30.0,30.0,0.0,70.0,0.0,0.0,3.87,1.76,0.64,23.8,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_195F002,FLEX (PSI-69),Heptane,Liquid Droplet,71.95388340000001,30.0,30.0,0.0,70.0,0.0,0.0,3.36,1.76,0.64,17.3,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_178R001,FLEX (PSI-69),Methanol,Liquid Droplet,102.2446418,30.0,30.0,0.0,70.0,0.0,0.0,2.57,1.76,0.74,10.4,Completion,0.0,0.0,0.0,2,Critical
+FLEX_178F001,FLEX (PSI-69),Methanol,Liquid Droplet,102.5512824,30.0,30.0,0.0,70.0,0.0,0.0,3.26,1.32,0.59,15.6,Extinction,0.0,0.0,0.0,2,Critical
+FLEX_182F001,FLEX (PSI-69),Heptane,Liquid Droplet,102.72460099999999,30.0,30.0,0.0,70.0,0.0,0.0,3.39,1.76,0.85,18.4,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_182F002,FLEX (PSI-69),Heptane,Liquid Droplet,102.791262,30.0,30.0,0.0,70.0,0.0,0.0,3.07,1.76,0.68,14.0,Completion,0.0,0.0,0.0,2,Critical
+FLEX_177R002,FLEX (PSI-69),Methanol,Liquid Droplet,101.924669,21.0,21.0,0.0,79.0,0.0,0.0,2.62,1.25,0.48,11.4,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_177F001,FLEX (PSI-69),Methanol,Liquid Droplet,102.3512994,21.0,21.0,0.0,79.0,0.0,0.0,3.89,2.0,0.44,27.3,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_181F001,FLEX (PSI-69),Heptane,Liquid Droplet,102.4046282,21.0,21.0,0.0,79.0,0.0,0.0,3.85,3.34,0.43,8.9,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_190R002,FLEX (PSI-69),Methanol,Liquid Droplet,71.860558,20.0,20.0,0.0,80.0,0.0,0.0,2.4,1.67,0.45,7.1,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_220R001,FLEX (PSI-69),Methanol,Liquid Droplet,71.23394459999999,34.0,34.0,0.0,66.0,0.0,0.0,3.31,1.76,0.72,10.7,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_220R002,FLEX (PSI-69),Methanol,Liquid Droplet,71.2472768,34.0,34.0,0.0,66.0,0.0,0.0,3.59,1.76,0.71,15.3,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_224F001,FLEX (PSI-69),Heptane,Liquid Droplet,71.31393779999999,34.0,34.0,0.0,66.0,0.0,0.0,2.91,0.0,0.8,9.9,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_219R001,FLEX (PSI-69),Methanol,Liquid Droplet,71.3406022,30.0,30.0,0.0,70.0,0.0,0.0,3.77,1.76,0.62,19.2,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_219F001,FLEX (PSI-69),Methanol,Liquid Droplet,71.23394459999999,30.0,30.0,0.0,70.0,0.0,0.0,3.35,1.76,0.65,14.1,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_223F001,FLEX (PSI-69),Heptane,Liquid Droplet,71.32727,30.0,30.0,0.0,70.0,0.0,0.0,2.92,1.76,0.58,11.3,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_223F002,FLEX (PSI-69),Heptane,Liquid Droplet,71.31393779999999,30.0,30.0,0.0,70.0,0.0,0.0,2.97,0.0,0.78,11.4,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_206F001,FLEX (PSI-69),Methanol,Liquid Droplet,102.23130959999999,30.0,30.0,0.0,70.0,0.0,0.0,3.49,1.76,0.63,16.6,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_206R001,FLEX (PSI-69),Methanol,Liquid Droplet,102.43129259999999,30.0,30.0,0.0,70.0,0.0,0.0,2.42,1.01,0.73,6.6,Extinction,0.0,0.0,0.0,2,Critical
+FLEX_205R001,FLEX (PSI-69),Methanol,Liquid Droplet,102.591279,21.0,21.0,0.0,79.0,0.0,0.0,2.78,1.08,0.54,13.1,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_209F001,FLEX (PSI-69),Heptane,Liquid Droplet,102.6712722,21.0,21.0,0.0,79.0,0.0,0.0,3.36,1.76,0.5,17.1,Completion,0.0,0.0,0.0,1,Warning
+FLEX_205F001,FLEX (PSI-69),Methanol,Liquid Droplet,102.48462140000001,21.0,21.0,0.0,79.0,0.0,0.0,3.66,1.76,0.27,23.5,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_209F003,FLEX (PSI-69),Heptane,Liquid Droplet,101.9779978,21.0,21.0,0.0,79.0,0.0,0.0,3.46,2.78,0.59,8.6,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_209F004,FLEX (PSI-69),Heptane,Liquid Droplet,102.6712722,21.0,21.0,0.0,79.0,0.0,0.0,3.57,2.98,0.52,8.4,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_209F005,FLEX (PSI-69),Heptane,Liquid Droplet,102.84459079999999,21.0,21.0,0.0,79.0,0.0,0.0,2.41,0.0,0.65,8.2,Completion,0.0,0.0,0.0,1,Warning
+FLEX_210F002,FLEX (PSI-69),Heptane,Liquid Droplet,102.8045942,30.0,30.0,0.0,70.0,0.0,0.0,3.53,0.0,0.7,18.3,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_209F002,FLEX (PSI-69),Heptane,Liquid Droplet,102.6846044,21.0,21.0,0.0,79.0,0.0,0.0,3.0149999999999997,1.76,0.5,18.5,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_190F003,FLEX (PSI-69),Methanol,Liquid Droplet,72.1805308,20.0,20.0,0.0,80.0,0.0,0.0,3.56,1.76,0.41,29.0,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_218F001,FLEX (PSI-69),Methanol,Liquid Droplet,72.34051720000001,20.0,20.0,0.0,80.0,0.0,0.0,3.37,2.39,0.46,20.5,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_194F001,FLEX (PSI-69),Heptane,Liquid Droplet,72.5405002,20.0,20.0,0.0,79.0,0.0,0.0,3.56,3.04,0.44,7.9,Completion,0.0,0.0,0.0,1,Warning
+FLEX_303F001,FLEX (PSI-69),Heptane,Liquid Droplet,72.58049679999999,20.0,20.0,0.0,79.0,0.0,0.0,3.1,2.49,0.54,6.8,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_176F001,FLEX (PSI-69),Methanol,Liquid Droplet,103.0979026,18.0,18.0,0.0,82.0,0.0,0.0,3.69,1.76,0.42,29.1,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_176R001,FLEX (PSI-69),Methanol,Liquid Droplet,102.5512824,18.0,18.0,0.0,82.0,0.0,0.0,2.93,1.39,0.43,17.7,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_204F001,FLEX (PSI-69),Methanol,Liquid Droplet,103.1512314,18.0,18.0,0.0,82.0,0.0,0.0,3.43,1.76,0.45,23.2,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_204R001,FLEX (PSI-69),Methanol,Liquid Droplet,103.2045602,18.0,18.0,0.0,82.0,0.0,0.0,3.68,2.0,0.41,25.7,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_301F001,FLEX (PSI-69),Heptane,Liquid Droplet,101.5646996,18.0,18.0,0.0,82.0,0.0,0.0,3.43,3.17,0.39,4.8,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_301F002,FLEX (PSI-69),Heptane,Liquid Droplet,102.3379672,18.0,18.0,0.0,81.0,0.0,0.0,2.15,0.0,0.51,9.6,Completion,0.0,0.0,0.0,0,Safe
+FLEX_302F001,FLEX (PSI-69),Heptane,Liquid Droplet,101.9380012,18.0,18.0,0.0,81.0,0.0,0.0,2.69,2.07,0.6,5.5,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_189R001,FLEX (PSI-69),Methanol,Liquid Droplet,102.11131979999999,15.0,15.0,0.0,85.0,0.0,0.0,3.37,1.76,0.4,24.3,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_189F001,FLEX (PSI-69),Methanol,Liquid Droplet,102.23130959999999,15.0,15.0,0.0,85.0,0.0,0.0,2.52,1.32,0.38,12.9,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_189F002,FLEX (PSI-69),Methanol,Liquid Droplet,102.3512994,15.0,15.0,0.0,85.0,0.0,0.0,3.97,3.3,0.36,14.4,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_189R003,FLEX (PSI-69),Methanol,Liquid Droplet,102.49795359999999,15.0,15.0,0.0,84.0,0.0,0.0,2.38,1.29,0.39,10.7,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_193R002,FLEX (PSI-69),Heptane,Liquid Droplet,102.2713062,14.000000000000002,14.000000000000002,0.0,84.0,0.0,0.0,1.1,0.0,0.94,1.3,Completion,0.0,0.0,0.0,2,Critical
+FLEX_193F001,FLEX (PSI-69),Heptane,Liquid Droplet,101.45804199999999,15.0,15.0,0.0,84.0,0.0,0.0,4.67,4.6,0.41,1.6,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_189R002,FLEX (PSI-69),Methanol,Liquid Droplet,102.43129259999999,15.0,15.0,0.0,84.0,0.0,0.0,2.25,1.76,0.4,8.4,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_193R001,FLEX (PSI-69),Heptane,Liquid Droplet,102.0179944,15.0,15.0,0.0,84.0,0.0,0.0,1.13,1.76,0.52,2.5,Completion,0.0,0.0,0.0,0,Safe
+FLEX_193F001,FLEX (PSI-69),Heptane,Liquid Droplet,101.45804199999999,15.0,15.0,0.0,84.0,0.0,0.0,4.64,4.58,0.56,1.5,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_221F001,FLEX (PSI-69),Heptane,Liquid Droplet,102.11131979999999,15.0,15.0,0.0,84.0,0.0,0.0,1.33,1.76,0.77,2.3,Completion,0.0,0.0,0.0,2,Critical
+FLEX_203R002,FLEX (PSI-69),Methanol,Liquid Droplet,102.76459759999999,13.0,13.0,0.0,85.0,0.0,0.0,2.54,1.78,0.37,9.1,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_203F001,FLEX (PSI-69),Methanol,Liquid Droplet,102.591279,13.0,13.0,0.0,85.0,0.0,0.0,3.21,2.78,0.37,8.9,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_175R001,FLEX (PSI-69),Methanol,Liquid Droplet,102.4446248,14.000000000000002,14.000000000000002,0.0,85.0,0.0,0.0,3.33,2.91,0.34,8.5,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_175F001,FLEX (PSI-69),Methanol,Liquid Droplet,102.124652,14.000000000000002,14.000000000000002,0.0,85.0,0.0,0.0,2.66,1.66,0.35,12.9,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_179F001,FLEX (PSI-69),Heptane,Liquid Droplet,102.4046282,13.0,13.0,0.0,85.0,0.0,0.0,2.92,2.86,0.25,1.5,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_207F001,FLEX (PSI-69),Heptane,Liquid Droplet,102.65794,13.0,13.0,0.0,85.0,0.0,0.0,3.0149999999999997,1.76,0.5,1.0,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_207F002,FLEX (PSI-69),Heptane,Liquid Droplet,102.6846044,13.0,13.0,0.0,85.0,0.0,0.0,3.0149999999999997,1.76,0.5,1.5,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_304F001,FLEX (PSI-69),Methanol,Liquid Droplet,101.9380012,13.0,13.0,0.0,87.0,0.0,0.0,2.84,2.39,0.35,7.5,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_304F002,FLEX (PSI-69),Methanol,Liquid Droplet,102.924584,12.0,12.0,0.0,87.0,0.0,0.0,3.0149999999999997,1.76,0.5,5.45,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_304R001,FLEX (PSI-69),Methanol,Liquid Droplet,102.2846384,12.0,12.0,0.0,87.0,0.0,0.0,2.35,1.42,0.35,10.8,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_304R002,FLEX (PSI-69),Methanol,Liquid Droplet,102.8179264,12.0,12.0,0.0,87.0,0.0,0.0,2.4,1.77,0.35,9.3,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_305F002,FLEX (PSI-69),Methanol,Liquid Droplet,102.65794,12.0,12.0,0.0,87.0,0.0,0.0,3.07,2.56,0.35,9.0,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_305F003,FLEX (PSI-69),Methanol,Liquid Droplet,102.8179264,12.0,12.0,0.0,87.0,0.0,0.0,2.64,1.92,0.38,9.3,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_053R001,FLEX (PSI-69),Methanol,Liquid Droplet,71.660575,25.0,25.0,0.0,60.0,15.0,0.0,3.01,1.76,0.53,14.8,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_053F001,FLEX (PSI-69),Methanol,Liquid Droplet,71.6472428,25.0,25.0,0.0,60.0,15.0,0.0,3.7,1.76,0.51,24.0,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_141R001,FLEX (PSI-69),Methanol,Liquid Droplet,71.8872224,25.0,25.0,0.0,60.0,15.0,0.0,3.62,1.76,0.53,20.1,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_141F001,FLEX (PSI-69),Methanol,Liquid Droplet,71.76723259999999,25.0,25.0,0.0,60.0,15.0,0.0,3.51,1.76,0.51,18.0,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_061F002,FLEX (PSI-69),Heptane,Liquid Droplet,71.50058859999999,25.0,25.0,0.0,60.0,15.0,0.0,3.41,1.76,0.55,21.7,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_149F001,FLEX (PSI-69),Heptane,Liquid Droplet,71.6339106,25.0,25.0,0.0,60.0,15.0,0.0,2.48,0.0,0.71,8.3,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_C08H101,FLEX (PSI-69),Heptane,Liquid Droplet,71.1406192,24.0,24.0,0.0,56.00000000000001,20.0,0.0,3.53,2.76,0.51,10.1,Extinction,0.0,0.0,0.0,2,Critical
+FLEX_C08H201,FLEX (PSI-69),Heptane,Liquid Droplet,71.2472768,24.0,24.0,0.0,56.00000000000001,20.0,0.0,3.6,3.04,0.58,8.0,Extinction,0.0,0.0,0.0,2,Critical
+FLEX_C08H301,FLEX (PSI-69),Heptane,Liquid Droplet,71.2472768,24.0,24.0,0.0,56.00000000000001,20.0,0.0,3.0149999999999997,1.76,0.5,5.2,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_C08M101,FLEX (PSI-69),Methanol,Liquid Droplet,71.22061240000001,23.0,23.0,0.0,56.00000000000001,20.0,0.0,4.25,2.6,0.45,26.5,Completion,0.0,0.0,0.0,2,Critical
+FLEX_C09M201,FLEX (PSI-69),Methanol,Liquid Droplet,71.6072462,23.0,23.0,0.0,52.0,25.0,0.0,3.64,1.74,0.47,22.9,Extinction,0.0,0.0,0.0,2,Critical
+FLEX_C09M101,FLEX (PSI-69),Methanol,Liquid Droplet,71.32727,23.0,23.0,0.0,52.0,25.0,0.0,4.28,2.32,0.42,33.0,Extinction,0.0,0.0,0.0,2,Critical
+FLEX_C09H101,FLEX (PSI-69),Heptane,Liquid Droplet,71.5539174,23.0,23.0,0.0,52.0,25.0,0.0,4.14,3.98,0.34,6.1,Extinction,0.0,0.0,0.0,2,Critical
+FLEX_C09H201,FLEX (PSI-69),Heptane,Liquid Droplet,71.8205614,23.0,23.0,0.0,52.0,25.0,0.0,3.88,3.45,0.5,6.5,Extinction,0.0,0.0,0.0,2,Critical
+FLEX_C10H101,FLEX (PSI-69),Heptane,Liquid Droplet,71.22061240000001,21.0,21.0,0.0,49.0,30.0,0.0,3.57,3.43,0.33,4.2,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C10H201,FLEX (PSI-69),Heptane,Liquid Droplet,71.23394459999999,21.0,21.0,0.0,49.0,30.0,0.0,4.0,3.88,0.35,3.2,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C08M201,FLEX (PSI-69),Methanol,Liquid Droplet,71.2072802,23.0,23.0,0.0,56.00000000000001,20.0,0.0,3.6,1.58,0.49,23.2,Extinction,0.0,0.0,0.0,2,Critical
+FLEX_C08M301,FLEX (PSI-69),Methanol,Liquid Droplet,71.2739412,23.0,23.0,0.0,56.00000000000001,20.0,0.0,4.17,2.0,0.47,30.7,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_C09M401,FLEX (PSI-69),Methanol,Liquid Droplet,71.76723259999999,23.0,23.0,0.0,52.0,25.0,0.0,3.08,1.75,0.51,14.1,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_C08M401,FLEX (PSI-69),Methanol,Liquid Droplet,71.32727,23.0,23.0,0.0,56.00000000000001,20.0,0.0,3.18,1.76,0.52,15.1,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_C09M301,FLEX (PSI-69),Methanol,Liquid Droplet,71.76723259999999,23.0,23.0,0.0,52.0,25.0,0.0,3.75,1.76,0.47,24.3,Completion,0.0,0.0,0.0,2,Critical
+FLEX_C10M201,FLEX (PSI-69),Methanol,Liquid Droplet,71.593914,21.0,21.0,0.0,49.0,30.0,0.0,2.83,1.57,0.45,13.0,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C10M303,FLEX (PSI-69),Methanol,Liquid Droplet,71.58058179999999,21.0,21.0,0.0,49.0,30.0,0.0,3.37,2.1,0.45,16.4,Completion,0.0,0.0,0.0,1,Warning
+FLEX_C10M401,FLEX (PSI-69),Methanol,Liquid Droplet,70.7539854,21.0,21.0,0.0,49.0,30.0,0.0,3.99,2.35,0.43,25.2,Completion,0.0,0.0,0.0,1,Warning
+FLEX_C11M101,FLEX (PSI-69),Methanol,Liquid Droplet,71.2739412,20.0,20.0,0.0,45.0,35.0,0.0,4.2,2.85,0.49,18.2,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C11M201,FLEX (PSI-69),Methanol,Liquid Droplet,101.2713912,20.0,20.0,0.0,45.0,35.0,0.0,3.23,1.68,0.42,18.9,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C11M301,FLEX (PSI-69),Methanol,Liquid Droplet,71.43392759999999,20.0,20.0,0.0,45.0,35.0,0.0,3.97,2.61,0.41,22.9,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C11M401,FLEX (PSI-69),Methanol,Liquid Droplet,71.50058859999999,20.0,20.0,0.0,45.0,35.0,0.0,3.16,1.57,0.46,16.9,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C11H101,FLEX (PSI-69),Heptane,Liquid Droplet,70.80731420000001,20.0,20.0,0.0,45.0,35.0,0.0,3.84,3.77,0.25,2.4,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C11H201,FLEX (PSI-69),Heptane,Liquid Droplet,71.0339616,20.0,20.0,0.0,44.0,35.0,0.0,3.03,2.93,0.38,2.5,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C12H103,FLEX (PSI-69),Heptane,Liquid Droplet,71.0072972,18.0,18.0,0.0,42.0,40.0,0.0,2.6,2.48,0.37,1.3,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_C12H201,FLEX (PSI-69),Heptane,Liquid Droplet,70.993965,18.0,18.0,0.0,42.0,40.0,0.0,2.45,2.39,0.38,1.43,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_C12M101,FLEX (PSI-69),Methanol,Liquid Droplet,70.16736859999999,18.0,18.0,0.0,42.0,40.0,0.0,4.25,3.92,0.34,8.0,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_C12M201,FLEX (PSI-69),Methanol,Liquid Droplet,70.8206464,18.0,18.0,0.0,42.0,40.0,0.0,3.46,2.58,0.41,13.9,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C12M301,FLEX (PSI-69),Methanol,Liquid Droplet,70.92730399999999,18.0,18.0,0.0,42.0,40.0,0.0,4.13,3.79,0.35,8.7,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_C12M401,FLEX (PSI-69),Methanol,Liquid Droplet,70.9806328,18.0,18.0,0.0,42.0,40.0,0.0,2.87,2.74,0.3,2.4,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_C13M103,FLEX (PSI-69),Methanol,Liquid Droplet,71.6205784,17.0,17.0,0.0,38.0,45.0,0.0,3.63,3.37,0.35,5.7,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_C13M201,FLEX (PSI-69),Methanol,Liquid Droplet,71.4739242,17.0,17.0,0.0,38.0,45.0,0.0,2.8,1.84,0.4,11.7,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C13M301,FLEX (PSI-69),Methanol,Liquid Droplet,71.5539174,17.0,17.0,0.0,38.0,45.0,0.0,3.22,2.53,0.38,11.0,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C13M401,FLEX (PSI-69),Methanol,Liquid Droplet,71.6339106,17.0,17.0,0.0,38.0,45.0,0.0,2.91,1.76,0.39,11.5,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C13H102,FLEX (PSI-69),Heptane,Liquid Droplet,71.4872564,17.0,17.0,0.0,38.0,45.0,0.0,3.33,3.34,0.33,0.55,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_C13H201,FLEX (PSI-69),Heptane,Liquid Droplet,71.6205784,17.0,17.0,0.0,38.0,45.0,0.0,2.91,2.89,0.05,0.6,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_C21H101,FLEX (PSI-69),Heptane,Liquid Droplet,101.84467579999999,24.0,24.0,0.0,56.00000000000001,20.0,0.0,1.72,0.52,0.61,4.9,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_C21H201,FLEX (PSI-69),Heptane,Liquid Droplet,102.0179944,24.0,24.0,0.0,56.00000000000001,20.0,0.0,2.63,0.53,0.6,12.4,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_C21H301,FLEX (PSI-69),Heptane,Liquid Droplet,102.21797740000001,24.0,24.0,0.0,56.00000000000001,20.0,0.0,3.25,0.55,0.56,19.0,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_C21H401,FLEX (PSI-69),Heptane,Liquid Droplet,102.2846384,24.0,24.0,0.0,56.00000000000001,20.0,0.0,3.66,2.88,0.56,9.2,Extinction,0.0,0.0,0.0,2,Critical
+FLEX_C21H501,FLEX (PSI-69),Heptane,Liquid Droplet,102.4179604,24.0,24.0,0.0,56.00000000000001,20.0,0.0,2.78,0.0,0.59,10.8,Completion,0.0,0.0,0.0,2,Critical
+FLEX_C21H302,FLEX (PSI-69),Heptane,Liquid Droplet,102.4046282,24.0,24.0,0.0,56.00000000000001,20.0,0.0,3.08,1.76,0.51,17.0,Completion,0.0,0.0,0.0,2,Critical
+FLEX_C21H303,FLEX (PSI-69),Heptane,Liquid Droplet,102.4179604,24.0,24.0,0.0,56.00000000000001,20.0,0.0,3.13,1.76,0.55,17.5,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_C21H305,FLEX (PSI-69),Heptane,Liquid Droplet,102.391296,24.0,24.0,0.0,56.00000000000001,20.0,0.0,1.75,1.76,0.63,5.4,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_C14M101,FLEX (PSI-69),Methanol,Liquid Droplet,71.127287,15.0,15.0,0.0,35.0,50.0,0.0,3.98,3.95,0.2,1.3,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_C14M201,FLEX (PSI-69),Methanol,Liquid Droplet,71.2072802,15.0,15.0,0.0,35.0,50.0,0.0,2.86,2.73,0.3,2.3,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_C14M301,FLEX (PSI-69),Methanol,Liquid Droplet,71.260609,15.0,15.0,0.0,35.0,50.0,0.0,1.86,1.48,0.39,3.4,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_C14M302,FLEX (PSI-69),Methanol,Liquid Droplet,71.2872734,15.0,15.0,0.0,35.0,50.0,0.0,2.25,2.06,0.36,2.7,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_C01M101,FLEX (PSI-69),Methanol,Liquid Droplet,101.57803179999999,20.0,20.0,0.0,75.0,5.0,0.0,3.53,1.53,0.45,23.8,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C01M201,FLEX (PSI-69),Methanol,Liquid Droplet,101.791347,20.0,20.0,0.0,75.0,5.0,0.0,3.33,1.61,0.45,20.0,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C01M301,FLEX (PSI-69),Methanol,Liquid Droplet,102.057991,20.0,20.0,0.0,75.0,5.0,0.0,4.35,1.95,0.41,39.2,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C13M102,FLEX (PSI-69),Methanol,Liquid Droplet,71.42059540000001,17.0,17.0,0.0,38.0,45.0,0.0,3.02,2.49,0.4,7.8,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_C01H101,FLEX (PSI-69),Heptane,Liquid Droplet,101.9113368,20.0,20.0,0.0,75.0,5.0,0.0,2.58,1.15,0.54,11.8,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_C01H201,FLEX (PSI-69),Heptane,Liquid Droplet,102.1513164,20.0,20.0,0.0,75.0,5.0,0.0,2.21,0.82,0.53,8.9,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_C01H302,FLEX (PSI-69),Heptane,Liquid Droplet,102.3379672,20.0,20.0,0.0,75.0,5.0,0.0,3.18,2.54,0.46,8.0,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C03M101,FLEX (PSI-69),Methanol,Liquid Droplet,101.658025,18.0,18.0,0.0,67.0,15.0,0.0,3.86,1.76,0.36,31.3,Completion,0.0,0.0,0.0,1,Warning
+FLEX_C03M201,FLEX (PSI-69),Methanol,Liquid Droplet,101.99132999999999,18.0,18.0,0.0,67.0,15.0,0.0,3.33,1.23,0.43,23.2,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C03M301,FLEX (PSI-69),Methanol,Liquid Droplet,102.0713232,18.0,18.0,0.0,67.0,15.0,0.0,2.78,1.19,0.42,15.7,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C03H101,FLEX (PSI-69),Heptane,Liquid Droplet,101.6313606,18.0,18.0,0.0,67.0,15.0,0.0,3.7,3.6,0.34,2.2,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_C03H201,FLEX (PSI-69),Heptane,Liquid Droplet,101.9779978,18.0,18.0,0.0,67.0,15.0,0.0,2.73,2.52,0.39,2.7,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_C03H401,FLEX (PSI-69),Heptane,Liquid Droplet,102.0846554,18.0,18.0,0.0,67.0,15.0,0.0,1.34,0.45,0.48,3.2,Completion,0.0,0.0,0.0,0,Safe
+FLEX_C05M101,FLEX (PSI-69),Methanol,Liquid Droplet,101.6046962,16.0,16.0,0.0,59.0,25.0,0.0,4.24,3.96,0.3,7.6,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_C05M201,FLEX (PSI-69),Methanol,Liquid Droplet,101.9113368,16.0,16.0,0.0,59.0,25.0,0.0,3.7,3.22,0.37,10.1,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C05M301,FLEX (PSI-69),Methanol,Liquid Droplet,102.057991,16.0,16.0,0.0,59.0,25.0,0.0,2.71,1.34,0.38,14.9,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C05M401,FLEX (PSI-69),Methanol,Liquid Droplet,102.3379672,16.0,16.0,0.0,59.0,25.0,0.0,2.77,1.52,0.38,14.8,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C06M101,FLEX (PSI-69),Methanol,Liquid Droplet,101.76468259999999,15.0,15.0,0.0,54.0,32.0,0.0,3.72,3.5,0.28,6.0,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_C06M201,FLEX (PSI-69),Methanol,Liquid Droplet,101.9113368,15.0,15.0,0.0,53.0,32.0,0.0,3.05,2.54,0.37,8.5,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_C06M301,FLEX (PSI-69),Methanol,Liquid Droplet,102.11131979999999,15.0,15.0,0.0,53.0,32.0,0.0,2.59,1.63,0.37,11.6,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C06M401,FLEX (PSI-69),Methanol,Liquid Droplet,102.1379842,15.0,15.0,0.0,53.0,32.0,0.0,2.59,1.79,0.42,8.9,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_C03H302,FLEX (PSI-69),Heptane,Liquid Droplet,102.0446588,18.0,18.0,0.0,67.0,15.0,0.0,1.96,1.39,0.54,3.9,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_C07M101,FLEX (PSI-69),Methanol,Liquid Droplet,101.43137759999999,14.000000000000002,14.000000000000002,0.0,50.0,36.0,0.0,3.22,3.08,0.28,3.4,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_C07M201,FLEX (PSI-69),Methanol,Liquid Droplet,101.5380352,14.000000000000002,14.000000000000002,0.0,50.0,36.0,0.0,2.32,1.84,0.37,5.9,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_C15M101,FLEX (PSI-69),Methanol,Liquid Droplet,101.7780148,21.0,21.0,0.0,64.0,15.0,0.0,3.03,1.57,0.48,15.6,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_C15M201,FLEX (PSI-69),Methanol,Liquid Droplet,102.1379842,21.0,21.0,0.0,64.0,15.0,0.0,3.05,1.28,0.51,16.7,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C15M301,FLEX (PSI-69),Methanol,Liquid Droplet,102.21797740000001,21.0,21.0,0.0,64.0,15.0,0.0,3.53,1.59,0.46,23.6,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C03H501,FLEX (PSI-69),Heptane,Liquid Droplet,101.31138779999999,18.0,18.0,0.0,67.0,15.0,0.0,3.74,3.68,0.35,2.8,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_C03H601,FLEX (PSI-69),Heptane,Liquid Droplet,101.591364,18.0,18.0,0.0,67.0,15.0,0.0,2.4,1.96,0.46,4.4,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_C03H701,FLEX (PSI-69),Heptane,Liquid Droplet,101.6046962,18.0,18.0,0.0,67.0,15.0,0.0,1.35,0.47,0.5,3.6,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_C08H502,FLEX (PSI-69),Heptane,Liquid Droplet,70.8873074,24.0,24.0,0.0,56.00000000000001,20.0,0.0,2.5,0.21,0.56,11.2,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_C08H601,FLEX (PSI-69),Heptane,Liquid Droplet,70.9406362,24.0,24.0,0.0,56.00000000000001,20.0,0.0,2.88,1.76,0.55,15.6,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_C08M501,FLEX (PSI-69),Methanol,Liquid Droplet,71.58058179999999,24.0,24.0,0.0,56.00000000000001,20.0,0.0,4.53,1.76,0.46,38.2,Extinction,0.0,0.0,0.0,2,Critical
+FLEX_C08M601,FLEX (PSI-69),Methanol,Liquid Droplet,71.593914,24.0,24.0,0.0,56.00000000000001,20.0,0.0,3.02,1.35,0.52,14.5,Extinction,0.0,0.0,0.0,2,Critical
+FLEX_C09H501,FLEX (PSI-69),Heptane,Liquid Droplet,71.1406192,23.0,23.0,0.0,52.0,25.0,0.0,3.32,2.61,0.5,8.9,Extinction,0.0,0.0,0.0,2,Critical
+FLEX_C09H601,FLEX (PSI-69),Heptane,Liquid Droplet,71.2472768,23.0,23.0,0.0,52.0,25.0,0.0,2.07,0.48,0.57,7.5,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_C02H101,FLEX (PSI-69),Heptane,Liquid Droplet,101.11140479999999,19.0,19.0,0.0,71.0,10.0,0.0,3.4,3.13,0.41,4.5,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C02H201,FLEX (PSI-69),Heptane,Liquid Droplet,101.2047302,19.0,19.0,0.0,71.0,10.0,0.0,2.48,1.68,0.49,7.0,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C02H202,FLEX (PSI-69),Heptane,Liquid Droplet,101.19139799999999,19.0,19.0,0.0,71.0,10.0,0.0,1.64,0.49,0.54,5.1,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_C09M501,FLEX (PSI-69),Methanol,Liquid Droplet,71.2472768,23.0,23.0,0.0,52.0,25.0,0.0,3.72,1.76,0.53,26.2,Extinction,0.0,0.0,0.0,2,Critical
+FLEX_C09M502,FLEX (PSI-69),Methanol,Liquid Droplet,71.3406022,23.0,23.0,0.0,52.0,25.0,0.0,3.42,1.76,0.51,15.8,Extinction,0.0,0.0,0.0,2,Critical
+FLEX_C09M601,FLEX (PSI-69),Methanol,Liquid Droplet,71.3539344,23.0,23.0,0.0,52.0,25.0,0.0,2.8,1.33,0.51,12.7,Extinction,0.0,0.0,0.0,2,Critical
+FLEX_C09M701,FLEX (PSI-69),Methanol,Liquid Droplet,71.4872564,23.0,23.0,0.0,52.0,25.0,0.0,2.47,1.21,0.52,9.2,Extinction,0.0,0.0,0.0,2,Critical
+FLEX_C02M101,FLEX (PSI-69),Methanol,Liquid Droplet,101.058076,19.0,19.0,0.0,71.0,10.0,0.0,3.38,1.29,0.47,21.8,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C02M201,FLEX (PSI-69),Methanol,Liquid Droplet,101.0714082,19.0,19.0,0.0,71.0,10.0,0.0,2.47,1.08,0.46,11.0,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C03M501,FLEX (PSI-69),Methanol,Liquid Droplet,101.48470640000001,18.0,18.0,0.0,67.0,15.0,0.0,3.77,1.78,0.42,30.5,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C03M601,FLEX (PSI-69),Methanol,Liquid Droplet,101.9380012,18.0,18.0,0.0,67.0,15.0,0.0,2.74,0.95,0.5,14.0,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C03M701,FLEX (PSI-69),Methanol,Liquid Droplet,102.03132659999999,18.0,18.0,0.0,67.0,15.0,0.0,1.76,0.81,0.46,5.5,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_C04M101,FLEX (PSI-69),Methanol,Liquid Droplet,101.258059,17.0,17.0,0.0,63.0,20.0,0.0,3.46,1.76,0.39,21.8,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C04M201,FLEX (PSI-69),Methanol,Liquid Droplet,101.2047302,17.0,17.0,0.0,63.0,20.0,0.0,2.77,1.27,0.4,15.6,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C04H101,FLEX (PSI-69),Heptane,Liquid Droplet,100.258144,17.0,17.0,0.0,63.0,20.0,0.0,3.76,3.71,0.29,1.6,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_C04H201,FLEX (PSI-69),Heptane,Liquid Droplet,100.324805,17.0,17.0,0.0,63.0,20.0,0.0,2.9,2.79,0.36,1.9,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_C01H501,FLEX (PSI-69),Heptane,Liquid Droplet,101.11140479999999,20.0,20.0,0.0,75.0,5.0,0.0,3.06,2.28,0.52,8.9,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C01H601,FLEX (PSI-69),Heptane,Liquid Droplet,101.2980556,20.0,20.0,0.0,75.0,5.0,0.0,3.04,2.33,0.49,8.1,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C01H701,FLEX (PSI-69),Heptane,Liquid Droplet,101.3380522,20.0,20.0,0.0,75.0,5.0,0.0,2.12,0.13,0.53,8.7,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_C01M501,FLEX (PSI-69),Methanol,Liquid Droplet,100.524788,20.0,20.0,0.0,75.0,5.0,0.0,3.37,0.98,0.49,21.0,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C01M602,FLEX (PSI-69),Methanol,Liquid Droplet,100.8047642,20.0,20.0,0.0,75.0,5.0,0.0,2.57,1.13,0.47,11.7,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_C01M603,FLEX (PSI-69),Methanol,Liquid Droplet,100.9114218,20.0,20.0,0.0,75.0,5.0,0.0,2.4,1.05,0.48,10.2,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_N01M101,FLEX (PSI-69),Methanol,Liquid Droplet,101.3513844,21.0,21.0,0.0,79.0,0.0,0.0,3.3,1.42,0.47,19.5,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_N01M201,FLEX (PSI-69),Methanol,Liquid Droplet,101.5380352,21.0,21.0,0.0,79.0,0.0,0.0,2.75,1.11,0.52,12.8,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_N01H101,FLEX (PSI-69),Heptane,Liquid Droplet,100.858093,21.0,21.0,0.0,79.0,0.0,0.0,3.56,1.76,0.43,23.9,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_N01H102,FLEX (PSI-69),Heptane,Liquid Droplet,100.96475059999999,21.0,21.0,0.0,79.0,0.0,0.0,3.58,1.76,0.42,24.0,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_N01H201,FLEX (PSI-69),Heptane,Liquid Droplet,101.3513844,21.0,21.0,0.0,79.0,0.0,0.0,2.96,0.47,0.5,17.1,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_N01H202,FLEX (PSI-69),Heptane,Liquid Droplet,101.6846894,21.0,21.0,0.0,79.0,0.0,0.0,2.72,1.13,0.54,11.5,Completion,0.0,0.0,0.0,1,Warning
+FLEX_N01H301,FLEX (PSI-69),Heptane,Liquid Droplet,101.7113538,21.0,21.0,0.0,79.0,0.0,0.0,2.92,1.76,0.69,12.8,Completion,0.0,0.0,0.0,1,Warning
+FLEX_N02H101,FLEX (PSI-69),Heptane,Liquid Droplet,101.2980556,16.0,16.0,0.0,84.0,0.0,0.0,3.34,3.18,0.34,3.4,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_N02H203,FLEX (PSI-69),Heptane,Liquid Droplet,101.31138779999999,16.0,16.0,0.0,84.0,0.0,0.0,2.52,2.13,0.42,4.5,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_N03H101,FLEX (PSI-69),Heptane,Liquid Droplet,101.858008,15.0,15.0,0.0,85.0,0.0,0.0,2.55,2.31,0.37,3.4,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_N04H101,FLEX (PSI-69),Heptane,Liquid Droplet,101.2980556,14.000000000000002,14.000000000000002,0.0,86.0,0.0,0.0,4.16,4.15,0.24,1.6,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_N04H201,FLEX (PSI-69),Heptane,Liquid Droplet,101.31138779999999,14.000000000000002,14.000000000000002,0.0,86.0,0.0,0.0,1.83,1.76,0.39,3.8,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_N04M101,FLEX (PSI-69),Methanol,Liquid Droplet,101.0047472,14.000000000000002,14.000000000000002,0.0,86.0,0.0,0.0,3.5,1.76,0.3,26.0,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_N04M201,FLEX (PSI-69),Methanol,Liquid Droplet,101.0980726,14.000000000000002,14.000000000000002,0.0,86.0,0.0,0.0,2.67,1.27,0.38,15.6,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_N05M101,FLEX (PSI-69),Methanol,Liquid Droplet,101.2447268,13.0,13.0,0.0,87.0,0.0,0.0,3.46,2.96,0.36,9.5,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_N05M201,FLEX (PSI-69),Methanol,Liquid Droplet,101.4047132,13.0,13.0,0.0,87.0,0.0,0.0,2.75,1.46,0.35,16.3,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_N06M101,FLEX (PSI-69),Methanol,Liquid Droplet,101.5380352,12.0,12.0,0.0,88.0,0.0,0.0,2.6,2.09,0.36,6.9,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_N06M201,FLEX (PSI-69),Methanol,Liquid Droplet,101.57803179999999,12.0,12.0,0.0,88.0,0.0,0.0,1.94,1.05,0.35,7.8,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_N06M202,FLEX (PSI-69),Methanol,Liquid Droplet,101.8180114,12.0,12.0,0.0,88.0,0.0,0.0,1.84,1.04,0.38,6.0,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_H01M102,FLEX (PSI-69),Methanol,Liquid Droplet,101.21806240000001,20.0,20.0,0.0,75.0,0.0,5.0,2.91,1.12,0.51,14.4,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_H01M104,FLEX (PSI-69),Methanol,Liquid Droplet,101.2713912,20.0,20.0,0.0,75.0,0.0,5.0,3.0149999999999997,1.76,0.5,6.0,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_H01H102,FLEX (PSI-69),Heptane,Liquid Droplet,100.69810659999999,20.0,20.0,0.0,75.0,0.0,5.0,2.25,1.76,0.57,9.0,Completion,0.0,0.0,0.0,1,Warning
+FLEX_H02M101,FLEX (PSI-69),Methanol,Liquid Droplet,100.4447948,19.0,19.0,0.0,71.0,0.0,10.0,2.78,1.76,0.57,12.5,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_H03M101,FLEX (PSI-69),Methanol,Liquid Droplet,101.21806240000001,18.0,18.0,0.0,67.0,0.0,15.0,2.79,1.3,0.51,12.5,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_H03M201,FLEX (PSI-69),Methanol,Liquid Droplet,101.3647166,18.0,18.0,0.0,67.0,0.0,15.0,2.95,1.67,0.53,11.7,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_N01H401,FLEX (PSI-69),Heptane,Liquid Droplet,102.31130279999999,21.0,21.0,0.0,79.0,0.0,0.0,3.32,1.37,0.52,17.5,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_N01H502,FLEX (PSI-69),Heptane,Liquid Droplet,102.4046282,21.0,21.0,0.0,79.0,0.0,0.0,2.39,1.76,0.57,10.6,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_N01H601,FLEX (PSI-69),Heptane,Liquid Droplet,102.5512824,21.0,21.0,0.0,79.0,0.0,0.0,3.65,2.85,0.57,9.6,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_H02H101,FLEX (PSI-69),Heptane,Liquid Droplet,101.16473359999999,19.0,19.0,0.0,71.0,0.0,10.0,2.59,1.76,0.54,12.0,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_H03H101,FLEX (PSI-69),Heptane,Liquid Droplet,101.8180114,18.0,18.0,0.0,67.0,0.0,15.0,3.52,3.28,0.41,4.1,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_H03H201,FLEX (PSI-69),Heptane,Liquid Droplet,102.11131979999999,18.0,18.0,0.0,67.0,0.0,15.0,2.3,1.76,0.49,9.1,Completion,0.0,0.0,0.0,0,Safe
+FLEX_H03H202,FLEX (PSI-69),Heptane,Liquid Droplet,102.191313,18.0,18.0,0.0,67.0,0.0,15.0,2.27,1.76,0.51,8.6,Completion,0.0,0.0,0.0,0,Safe
+FLEX_H04H101,FLEX (PSI-69),Heptane,Liquid Droplet,101.23139459999999,17.0,17.0,0.0,63.0,0.0,20.0,2.85,2.6,0.46,3.2,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_H04H201,FLEX (PSI-69),Heptane,Liquid Droplet,101.23139459999999,17.0,17.0,0.0,63.0,0.0,20.0,2.12,1.39,0.59,4.5,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_H04H302,FLEX (PSI-69),Heptane,Liquid Droplet,101.2713912,17.0,17.0,0.0,63.0,0.0,20.0,3.0149999999999997,1.76,0.5,1.7,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_H04H303,FLEX (PSI-69),Heptane,Liquid Droplet,101.2980556,17.0,17.0,0.0,63.0,0.0,20.0,1.61,1.76,0.91,2.7,Completion,0.0,0.0,0.0,2,Critical
+FLEX_H04M101,FLEX (PSI-69),Methanol,Liquid Droplet,100.5514524,17.0,17.0,0.0,63.0,0.0,20.0,2.99,1.76,0.49,9.1,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_H04M202,FLEX (PSI-69),Methanol,Liquid Droplet,100.924754,17.0,17.0,0.0,63.0,0.0,20.0,2.9,1.42,0.51,13.1,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_H05M102,FLEX (PSI-69),Methanol,Liquid Droplet,101.31138779999999,16.0,16.0,0.0,59.0,0.0,25.0,3.4,2.79,0.51,7.9,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_H05M202,FLEX (PSI-69),Methanol,Liquid Droplet,101.45804199999999,16.0,16.0,0.0,59.0,0.0,25.0,3.0149999999999997,1.76,0.5,5.0,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_H05H103,FLEX (PSI-69),Heptane,Liquid Droplet,101.04474379999999,16.0,16.0,0.0,59.0,0.0,25.0,1.49,0.69,0.6,2.9,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_H06M102,FLEX (PSI-69),Methanol,Liquid Droplet,100.7381032,15.0,15.0,0.0,55.00000000000001,0.0,30.0,3.67,3.47,0.43,3.6,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_H06M201,FLEX (PSI-69),Methanol,Liquid Droplet,100.8847574,15.0,15.0,0.0,55.00000000000001,0.0,30.0,2.52,2.06,0.56,4.0,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_H07M101,FLEX (PSI-69),Methanol,Liquid Droplet,101.21806240000001,14.000000000000002,14.000000000000002,0.0,51.0,0.0,35.0,2.44,2.26,0.56,1.5,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_H07M202,FLEX (PSI-69),Methanol,Liquid Droplet,101.2980556,14.000000000000002,14.000000000000002,0.0,51.0,0.0,35.0,1.88,1.73,0.58,1.0,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_H08M101,FLEX (PSI-69),Methanol,Liquid Droplet,101.791347,13.0,13.0,0.0,47.0,0.0,40.0,3.56,3.54,0.51,0.3,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_H10H101,FLEX (PSI-69),Heptane,Liquid Droplet,71.19394799999999,24.0,24.0,0.0,56.00000000000001,0.0,20.0,3.78,2.52,0.72,12.2,Extinction,0.0,0.0,0.0,2,Critical
+FLEX_H11H101,FLEX (PSI-69),Heptane,Liquid Droplet,70.95396840000001,23.0,23.0,0.0,52.0,0.0,25.0,2.8,0.12,0.71,11.4,Completion,0.0,0.0,0.0,2,Critical
+FLEX_H10M101,FLEX (PSI-69),Methanol,Liquid Droplet,71.23394459999999,24.0,24.0,0.0,56.00000000000001,0.0,20.0,2.82,1.03,0.62,11.2,Extinction,0.0,0.0,0.0,2,Critical
+FLEX_H10M102,FLEX (PSI-69),Methanol,Liquid Droplet,71.2739412,24.0,24.0,0.0,56.00000000000001,0.0,20.0,2.79,1.53,0.7,8.1,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_H11M101,FLEX (PSI-69),Methanol,Liquid Droplet,70.8873074,23.0,23.0,0.0,52.0,0.0,25.0,2.45,0.86,0.6,8.3,Extinction,0.0,0.0,0.0,2,Critical
+FLEX_H11M102,FLEX (PSI-69),Methanol,Liquid Droplet,70.90063959999999,23.0,23.0,0.0,52.0,0.0,25.0,2.61,1.76,0.73,6.3,Disruption,0.0,0.0,0.0,2,Critical
+FLEX_H12M101,FLEX (PSI-69),Methanol,Liquid Droplet,70.9139718,21.0,21.0,0.0,49.0,0.0,30.0,3.22,1.76,0.56,10.4,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_H12M102,FLEX (PSI-69),Methanol,Liquid Droplet,70.8206464,21.0,21.0,0.0,49.0,0.0,30.0,3.25,1.78,0.65,12.1,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_H12M201,FLEX (PSI-69),Methanol,Liquid Droplet,70.8206464,21.0,21.0,0.0,49.0,0.0,30.0,2.67,1.42,0.7,7.6,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_H12H101,FLEX (PSI-69),Heptane,Liquid Droplet,70.6073312,21.0,21.0,0.0,49.0,0.0,30.0,3.23,2.33,0.67,7.5,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_H12H201,FLEX (PSI-69),Heptane,Liquid Droplet,70.527338,21.0,21.0,0.0,49.0,0.0,30.0,2.86,0.71,0.7,11.0,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_H13H101,FLEX (PSI-69),Heptane,Liquid Droplet,70.993965,20.0,20.0,0.0,45.0,0.0,35.0,3.69,3.32,0.61,4.3,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_H13H201,FLEX (PSI-69),Heptane,Liquid Droplet,70.92730399999999,20.0,20.0,0.0,45.0,0.0,35.0,3.08,1.69,0.67,5.4,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_H13M102,FLEX (PSI-69),Methanol,Liquid Droplet,70.3406872,20.0,20.0,0.0,45.0,0.0,35.0,3.87,2.24,0.6,17.4,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_H13M201,FLEX (PSI-69),Methanol,Liquid Droplet,70.3806838,20.0,20.0,0.0,45.0,0.0,35.0,2.95,1.5,0.63,10.6,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_H14M101,FLEX (PSI-69),Methanol,Liquid Droplet,70.9806328,18.0,18.0,0.0,42.0,0.0,40.0,3.5,2.67,0.59,7.8,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_H14M201,FLEX (PSI-69),Methanol,Liquid Droplet,71.04729379999999,18.0,18.0,0.0,42.0,0.0,40.0,2.7,1.92,0.63,5.9,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_H14M202,FLEX (PSI-69),Methanol,Liquid Droplet,71.0872904,18.0,18.0,0.0,42.0,0.0,40.0,1.84,1.3,0.62,2.3,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_H14H101,FLEX (PSI-69),Heptane,Liquid Droplet,70.394016,18.0,18.0,0.0,42.0,0.0,40.0,2.27,1.64,0.71,3.5,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_H14H201,FLEX (PSI-69),Heptane,Liquid Droplet,70.70065659999999,18.0,18.0,0.0,42.0,0.0,40.0,1.86,0.84,0.77,3.5,Extinction,0.0,0.0,0.0,2,Critical
+FLEX_H15H101,FLEX (PSI-69),Heptane,Liquid Droplet,70.95396840000001,17.0,17.0,0.0,38.0,0.0,45.0,2.22,1.86,0.76,1.9,Extinction,0.0,0.0,0.0,2,Critical
+FLEX_H15H201,FLEX (PSI-69),Heptane,Liquid Droplet,70.993965,17.0,17.0,0.0,38.0,0.0,45.0,1.61,0.91,1.06,1.4,Completion,0.0,0.0,0.0,2,Critical
+FLEX_H15M102,FLEX (PSI-69),Methanol,Liquid Droplet,70.7139888,17.0,17.0,0.0,38.0,0.0,45.0,2.79,2.3,0.63,4.0,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_H15M201,FLEX (PSI-69),Methanol,Liquid Droplet,70.860643,17.0,17.0,0.0,38.0,0.0,45.0,2.68,2.31,0.66,2.9,Extinction,0.0,0.0,0.0,0,Safe
+FLEX_H19H101,FLEX (PSI-69),Heptane,Liquid Droplet,101.95133340000001,21.0,21.0,0.0,64.0,0.0,15.0,3.54,2.91,0.55,7.6,Extinction,0.0,0.0,0.0,1,Warning
+FLEX_H19H201,FLEX (PSI-69),Heptane,Liquid Droplet,102.1513164,21.0,21.0,0.0,64.0,0.0,15.0,2.82,0.73,0.65,11.7,Extinction,0.0,0.0,0.0,1,Warning
+BASS2_B1,BASS-II (PSI-25),100 micron PMMA film   2 cm wide,Solid Polymer/Fabric,101.325,22.2,22.2,0.0,77.8,0.44,0.0,20.0,0.0,3.508771929824561,5.7,Extinction,0.0,6.0,6.0,2,Critical
+BASS2_B3,BASS-II (PSI-25),100 micron film   2 cm wide,Solid Polymer/Fabric,101.325,22.2,21.8,0.3999999999999986,77.8,0.43,0.0,20.0,0.0,0.7905138339920948,25.3,Extinction,12.0,19.0,7.0,2,Critical
+BASS2_B4,BASS-II (PSI-25),300 micron PMMA film   2 cm wide,Solid Polymer/Fabric,101.325,22.2,22.2,0.0,77.8,0.44,0.0,20.0,0.0,1.4598540145985401,13.7,Extinction,0.0,10.0,10.0,2,Critical
+BASS2_B5,BASS-II (PSI-25),200 micron  2 cm wide,Solid Polymer/Fabric,101.325,22.2,21.9,0.3000000000000007,77.8,0.43,0.0,20.0,0.0,0.9708737864077669,20.6,Extinction,0.0,12.0,12.0,2,Critical
+BASS2_B6,BASS-II (PSI-25),2 cm 0.1 mm PMMA film,Solid Polymer/Fabric,101.325,21.0,20.9,0.10000000000000142,79.0,0.33,0.0,20.0,0.0,2.5,8.0,Extinction,0.0,0.3,0.3,2,Critical
+BASS2_B7,BASS-II (PSI-25),400 micron film   2 cm wide,Solid Polymer/Fabric,101.325,22.2,22.1,0.09999999999999787,77.8,0.45,0.0,20.0,0.0,2.380952380952381,8.4,Extinction,1.0,17.0,16.0,2,Critical
+BASS2_B8,BASS-II (PSI-25),2 cm   0.2 mm PMMA film,Solid Polymer/Fabric,101.325,21.0,20.5,0.5,79.0,0.33,0.0,20.0,0.0,0.8849557522123893,22.6,Smoldering/CO Spike,0.0,131.0,131.0,2,Critical
+BASS2_B9,BASS-II (PSI-25),2 cm   0.1 mm PMMA film,Solid Polymer/Fabric,101.325,21.0,20.9,0.10000000000000142,79.0,0.33,0.0,20.0,0.0,4.444444444444445,4.5,Extinction,0.0,10.0,10.0,2,Critical
+BASS2_B10,BASS-II (PSI-25),1 cm   0.2 mm PMMA film,Solid Polymer/Fabric,101.325,21.0,20.8,0.1999999999999993,79.0,0.33,0.0,10.0,0.0,0.8130081300813008,12.3,Extinction,0.0,23.0,23.0,2,Critical
+BASS2_B11,BASS-II (PSI-25),2 cm   0.2 mm PMMA film,Solid Polymer/Fabric,101.325,21.0,20.7,0.3000000000000007,79.0,0.33,0.0,20.0,0.0,1.5267175572519085,13.1,Extinction,0.0,46.0,46.0,2,Critical
+BASS2_B12,BASS-II (PSI-25),300 micron film   2 cm wide,Solid Polymer/Fabric,101.325,22.2,22.1,0.09999999999999787,77.8,0.51,0.0,20.0,0.0,1.25,16.0,Extinction,17.0,33.0,16.0,2,Critical
+BASS2_B13,BASS-II (PSI-25),2 cm   0.4 mm thick film,Solid Polymer/Fabric,101.325,21.0,20.5,0.5,79.0,0.33,0.0,20.0,0.0,0.6430868167202572,31.1,Extinction,0.0,61.0,61.0,1,Warning
+BASS2_B14,BASS-II (PSI-25),1 cm wide 200 micron thick PMMA,Solid Polymer/Fabric,101.325,15.0,15.0,0.0,85.0,0.0,0.0,10.0,0.0,2.2727272727272725,4.4,Extinction,0.2,0.2,0.0,2,Critical
+BASS2_B15,BASS-II (PSI-25),2 cm   0.1 mm PMMA film,Solid Polymer/Fabric,101.325,21.0,20.8,0.1999999999999993,79.0,0.33,0.0,20.0,0.0,1.639344262295082,12.2,Extinction,0.0,22.0,22.0,2,Critical
+BASS2_B16,BASS-II (PSI-25),2 cm 100 micron thick PMMA,Solid Polymer/Fabric,101.325,17.3,17.2,0.10000000000000142,82.7,0.47,0.0,20.0,0.0,2.127659574468085,9.4,Extinction,103.0,119.0,16.0,2,Critical
+BASS2_B17,BASS-II (PSI-25),1 cm wide 200 micron thick PMMA,Solid Polymer/Fabric,101.325,17.5,17.4,0.10000000000000142,82.5,0.2,0.0,10.0,0.0,0.5263157894736842,19.0,Extinction,0.0,47.0,47.0,1,Warning
+BASS2_B18,BASS-II (PSI-25),1 cm wide 200 micron thick PMMA,Solid Polymer/Fabric,101.325,17.4,17.4,0.0,82.6,0.34,0.0,10.0,0.0,0.6578947368421053,15.2,Extinction,47.0,78.0,31.0,1,Warning
+BASS2_B19,BASS-II (PSI-25),2 cm 100 micron thick PMMA,Solid Polymer/Fabric,101.325,17.3,17.2,0.10000000000000142,82.7,0.51,0.0,20.0,0.0,2.1052631578947367,9.5,Extinction,119.0,131.0,12.0,2,Critical
+BASS2_B20,BASS-II (PSI-25),2 cm 100 micron thick PMMA,Solid Polymer/Fabric,101.325,17.4,17.4,0.0,82.6,0.42,0.0,20.0,0.0,1.8018018018018018,11.1,Extinction,78.0,103.0,25.0,2,Critical
+BASS2_B21,BASS-II (PSI-25),1 cm wide 200 micron thick PMMA,Solid Polymer/Fabric,101.325,20.8,20.6,0.1999999999999993,79.2,0.36,0.0,10.0,0.0,1.1363636363636362,8.8,Extinction,0.0,18.0,18.0,2,Critical
+BASS2_B22,BASS-II (PSI-25),1 cm wide 200 micron thick PMMA,Solid Polymer/Fabric,101.325,20.7,20.5,0.1999999999999993,79.3,0.41,0.0,10.0,0.0,1.2987012987012987,7.7,Extinction,0.0,10.0,10.0,2,Critical
+BASS2_F1,BASS-II (PSI-25),Nomex natural (nomex III),Solid Polymer/Fabric,101.325,22.2,22.2,0.0,77.8,0.46,0.0,20.0,0.0,0.9615384615384615,20.8,Extinction,0.0,2.0,2.0,2,Critical
+BASS2_F2,BASS-II (PSI-25),Nomex natural (nomex III),Solid Polymer/Fabric,101.325,21.0,21.0,0.0,79.0,0.37,0.0,20.0,0.0,2.7777777777777777,7.2,Extinction,105.0,82.0,0.0,2,Critical
+BASS2_F3,BASS-II (PSI-25),Nomex natural (nomex III),Solid Polymer/Fabric,101.325,21.7,21.7,0.0,78.3,0.36,0.0,20.0,0.0,4.347826086956522,4.6,Extinction,2.0,2.0,0.0,2,Critical
+BASS2_F4,BASS-II (PSI-25),Japan Wax candle,Solid Polymer/Fabric,101.325,17.4,17.4,0.0,82.6,0.38,0.0,20.0,0.0,0.7407407407407407,27.0,Extinction,22.0,56.0,34.0,1,Warning
+BASS2_M1,BASS-II (PSI-25),1 mm thick PMMA   1 sided   2 cm,Solid Polymer/Fabric,101.325,22.2,21.9,0.3000000000000007,77.8,0.45,0.0,20.0,0.0,0.6578947368421053,30.4,Extinction,0.0,60.0,60.0,2,Critical
+BASS2_M2,BASS-II (PSI-25),3 mm thick PMMA 1 sided    2 cm wide,Solid Polymer/Fabric,101.325,22.2,21.2,1.0,77.8,0.46,0.0,20.0,0.0,0.7633587786259542,26.2,Smoldering/CO Spike,12.0,325.0,313.0,2,Critical
+BASS2_M3,BASS-II (PSI-25),2 cm wide   5 mm thick 1 sided PMMA,Solid Polymer/Fabric,101.325,20.8,19.7,1.1000000000000014,79.2,0.33,0.0,20.0,0.0,0.8968609865470851,22.3,Smoldering/CO Spike,11.0,300.0,289.0,2,Critical
+BASS2_M4,BASS-II (PSI-25),5 mm thick PMMA   2 cm wide,Solid Polymer/Fabric,101.325,21.8,19.8,2.0,78.2,0.42,0.0,20.0,0.0,0.7633587786259542,26.2,Smoldering/CO Spike,2.0,561.0,559.0,2,Critical
+BASS2_M6,BASS-II (PSI-25),1 mm thick PMMA   2 cm wide,Solid Polymer/Fabric,101.325,21.8,20.7,1.1000000000000014,78.2,0.38,0.0,20.0,0.0,0.7434944237918216,26.9,Smoldering/CO Spike,1.0,345.0,344.0,2,Critical
+BASS2_M7,BASS-II (PSI-25),1 cm wide PMMA 1 mm thick,Solid Polymer/Fabric,101.325,18.9,18.4,0.5,81.1,1.42,0.0,10.0,0.0,0.4608294930875576,21.7,Smoldering/CO Spike,398.0,612.0,214.0,2,Critical
+BASS2_M8,BASS-II (PSI-25),1 cm wide PMMA 2 mm thick,Solid Polymer/Fabric,101.325,19.1,18.2,0.9000000000000021,80.9,0.44,0.0,10.0,0.0,0.3424657534246575,29.2,Smoldering/CO Spike,52.0,467.0,415.0,2,Critical
+BASS2_M9,BASS-II (PSI-25),1 cm wide PMMA 3 mm thick,Solid Polymer/Fabric,101.325,18.0,17.6,0.3999999999999986,82.0,0.26,0.0,10.0,0.0,0.6410256410256411,15.6,Smoldering/CO Spike,0.0,191.0,191.0,2,Critical
+BASS2_M10,BASS-II (PSI-25),4 mm thick   1 cm wide PMMA slab,Solid Polymer/Fabric,101.325,20.1,18.6,1.5,79.9,0.36,0.0,10.0,0.0,0.47846889952153115,20.9,Smoldering/CO Spike,0.0,536.0,536.0,2,Critical
+BASS2_M11,BASS-II (PSI-25),1 cm wide PMMA 5 mm thick,Solid Polymer/Fabric,101.325,20.0,18.5,1.5,80.0,0.58,0.0,10.0,0.0,0.4048582995951417,24.7,Smoldering/CO Spike,46.0,577.0,531.0,2,Critical
+BASS2_M12,BASS-II (PSI-25),2 mm thick PMMA   2 cm wide,Solid Polymer/Fabric,101.325,21.7,20.4,1.3000000000000007,78.3,0.42,0.0,20.0,0.0,0.7380073800738007,27.1,Smoldering/CO Spike,15.0,443.0,428.0,2,Critical
+BASS2_M13,BASS-II (PSI-25),4 mm thick PMMA   2 cm wide,Solid Polymer/Fabric,101.325,20.8,19.0,1.8000000000000007,79.2,0.36,0.0,20.0,0.0,0.7751937984496123,25.8,Smoldering/CO Spike,0.0,487.0,487.0,2,Critical
+BASS2_M14,BASS-II (PSI-25),2mm thick PMMA   1 sided   2 cm wide,Solid Polymer/Fabric,101.325,22.2,21.6,0.5999999999999979,77.8,0.45,0.0,20.0,0.0,0.7722007722007722,25.9,Smoldering/CO Spike,0.0,198.0,198.0,2,Critical
+BASS2_M15,BASS-II (PSI-25),2 cm   4 mm 1 sided PMMA slab,Solid Polymer/Fabric,101.325,21.0,20.0,1.0,79.0,0.37,0.0,20.0,0.0,1.3071895424836601,15.3,Smoldering/CO Spike,1.0,220.0,219.0,2,Critical
+BASS2_M16,BASS-II (PSI-25),1 mm thick PMMA   2 cm wide,Solid Polymer/Fabric,101.325,19.2,18.7,0.5,80.8,0.95,0.0,20.0,0.0,0.6688963210702341,29.9,Smoldering/CO Spike,118.0,421.0,303.0,2,Critical
+BASS2_M17,BASS-II (PSI-25),2 cm wide PMMA 2 mm thick,Solid Polymer/Fabric,101.325,18.8,17.1,1.6999999999999993,81.2,0.35,0.0,20.0,0.0,0.6472491909385114,30.9,Smoldering/CO Spike,4.0,485.0,481.0,2,Critical
+BASS2_M18,BASS-II (PSI-25),2 cm wide PMMA 3 mm thick,Solid Polymer/Fabric,101.325,17.9,16.8,1.0999999999999979,82.1,0.32,0.0,20.0,0.0,1.1235955056179774,17.8,Smoldering/CO Spike,0.0,335.0,335.0,2,Critical
+BASS2_M19,BASS-II (PSI-25),4 mm thick   2 cm 2ide PMMA slab,Solid Polymer/Fabric,101.325,19.0,17.4,1.6000000000000014,81.0,0.35,0.0,20.0,0.0,0.9950248756218905,20.1,Smoldering/CO Spike,3.0,357.0,354.0,2,Critical
+BASS2_M20,BASS-II (PSI-25),5 mm thick PMMA   2 cm wide,Solid Polymer/Fabric,101.325,18.0,17.4,0.6000000000000014,82.0,0.3,0.0,20.0,0.0,1.1904761904761905,16.8,Smoldering/CO Spike,0.0,157.0,157.0,2,Critical
+BASS2_O1,BASS-II (PSI-25),"1/4"" clear rod",Solid Polymer/Fabric,101.325,22.2,21.7,0.5,77.8,0.44,0.0,20.0,0.0,3.225806451612903,6.2,Extinction,0.0,51.0,51.0,2,Critical
+BASS2_O2,BASS-II (PSI-25),"1/4"" clear rod",Solid Polymer/Fabric,101.325,22.2,21.9,0.3000000000000007,77.8,0.44,0.0,20.0,0.0,0.6968641114982579,28.7,Extinction,0.0,23.0,23.0,2,Critical
+BASS2_O3a,BASS-II (PSI-25),"1/4"" clear rod",Solid Polymer/Fabric,101.325,18.0,18.0,0.0,82.0,0.25,0.0,20.0,0.0,2.3529411764705883,8.5,Extinction,16.0,22.0,6.0,2,Critical
+BASS2_O3b,BASS-II (PSI-25),"1/4"" clear rod",Solid Polymer/Fabric,101.325,18.0,17.7,0.3000000000000007,82.0,0.28,0.0,20.0,0.0,0.6535947712418301,30.6,Extinction,22.0,116.0,94.0,2,Critical
+BASS2_O4,BASS-II (PSI-25),"3/8""clear rod",Solid Polymer/Fabric,101.325,14.8,13.6,1.200000000000001,85.2,0.72,0.0,20.0,0.0,0.8032128514056225,24.9,Smoldering/CO Spike,290.0,550.0,260.0,2,Critical
+BASS2_O5a,BASS-II (PSI-25),"1/2"" clear PMMA rod",Solid Polymer/Fabric,101.325,15.1,14.2,0.9000000000000004,84.9,0.25,0.0,20.0,0.0,1.2195121951219514,16.4,Smoldering/CO Spike,0.0,496.0,496.0,2,Critical
+BASS2_O5b,BASS-II (PSI-25),"1/2"" clear PMMA rod",Solid Polymer/Fabric,101.325,14.2,14.1,0.09999999999999964,85.8,1.05,0.0,20.0,0.0,100.0,0.2,Extinction,496.0,590.0,94.0,2,Critical
+BASS2_O6,BASS-II (PSI-25),"1/4"" clear rod",Solid Polymer/Fabric,101.325,16.7,16.0,0.6999999999999993,83.3,0.32,0.0,20.0,0.0,0.8298755186721991,24.1,Smoldering/CO Spike,1.0,232.0,231.0,2,Critical
+BASS2_O7,BASS-II (PSI-25),"1/4"" clear rod",Solid Polymer/Fabric,101.325,16.0,15.5,0.5,84.0,0.74,0.0,20.0,0.0,0.7874015748031497,25.4,Smoldering/CO Spike,232.0,512.0,280.0,2,Critical
+BASS2_O8a,BASS-II (PSI-25),"1/4"" clear rod",Solid Polymer/Fabric,101.325,15.7,15.3,0.3999999999999986,84.3,1.23,0.0,20.0,0.0,1.5037593984962405,13.3,Extinction,436.0,536.0,100.0,2,Critical
+BASS2_O8b,BASS-II (PSI-25),"1/4"" clear rod",Solid Polymer/Fabric,101.325,15.5,15.2,0.3000000000000007,84.5,1.44,0.0,20.0,0.0,1.3157894736842106,15.2,Smoldering/CO Spike,536.0,660.0,124.0,2,Critical
+BASS2_O9,BASS-II (PSI-25),"1/4"" clear rod",Solid Polymer/Fabric,101.325,15.0,14.8,0.1999999999999993,85.0,1.74,0.0,20.0,0.0,1.2987012987012987,15.4,Smoldering/CO Spike,660.0,794.0,134.0,2,Critical
+BASS2_O10,BASS-II (PSI-25),"1/4"" clear rod",Solid Polymer/Fabric,101.325,16.7,16.1,0.5999999999999979,83.3,1.61,0.0,20.0,0.0,1.1627906976744187,17.2,Smoldering/CO Spike,94.0,287.0,193.0,2,Critical
+BASS2_O11,BASS-II (PSI-25),"1/4"" black rod",Solid Polymer/Fabric,101.325,15.4,14.8,0.5999999999999996,84.6,0.27,0.0,20.0,0.0,0.7380073800738007,27.1,Smoldering/CO Spike,2.0,290.0,288.0,2,Critical
+BASS2_O12,BASS-II (PSI-25),"3/8"" clear rod",Solid Polymer/Fabric,101.325,13.6,13.5,0.09999999999999964,86.4,1.72,0.0,20.0,0.0,3.846153846153846,5.2,Extinction,550.0,550.0,0.0,2,Critical
+BASS2_O13a,BASS-II (PSI-25),"1/2"" clear PMMA rod",Solid Polymer/Fabric,101.325,15.9,14.6,1.3000000000000007,84.1,0.91,0.0,20.0,0.0,1.0050251256281408,19.9,Smoldering/CO Spike,389.0,950.0,561.0,2,Critical
+BASS2_O13b,BASS-II (PSI-25),"1/2"" clear PMMA rod",Solid Polymer/Fabric,101.325,14.6,14.4,0.1999999999999993,85.4,1.85,0.0,20.0,0.0,33.333333333333336,0.6,Extinction,950.0,550.0,0.0,2,Critical
+BASS2_O14,BASS-II (PSI-25),"1/4"" black rod",Solid Polymer/Fabric,101.325,16.3,15.3,1.0,83.7,0.29,0.0,20.0,0.0,0.7168458781362007,27.9,Smoldering/CO Spike,4.0,352.0,348.0,2,Critical
+BASS2_O15a,BASS-II (PSI-25),"3/8"" clear rod",Solid Polymer/Fabric,101.325,17.1,16.7,0.40000000000000213,82.9,0.27,0.0,20.0,0.0,1.6129032258064515,12.4,Smoldering/CO Spike,0.0,176.0,176.0,2,Critical
+BASS2_O15b,BASS-II (PSI-25),"3/8"" clear rod",Solid Polymer/Fabric,101.325,16.7,15.6,1.0999999999999996,83.3,0.62,0.0,20.0,0.0,0.6329113924050632,31.6,Smoldering/CO Spike,176.0,751.0,575.0,2,Critical
+BASS2_O17,BASS-II (PSI-25),"1/4"" clear rod",Solid Polymer/Fabric,101.325,15.1,14.3,0.7999999999999989,84.9,0.31,0.0,20.0,0.0,1.149425287356322,17.4,Smoldering/CO Spike,2.0,377.0,375.0,2,Critical
+BASS2_O18,BASS-II (PSI-25),"1/4"" clear rod",Solid Polymer/Fabric,101.325,15.2,14.5,0.6999999999999993,84.8,1.45,0.0,20.0,0.0,1.1363636363636362,17.6,Smoldering/CO Spike,523.0,816.0,293.0,2,Critical
+BASS2_O19,BASS-II (PSI-25),"1/4"" clear rod",Solid Polymer/Fabric,101.325,15.3,14.6,0.7000000000000011,84.7,0.86,0.0,20.0,0.0,0.7518796992481203,26.6,Smoldering/CO Spike,352.0,686.0,334.0,2,Critical
+BASS2_P1,BASS-II (PSI-25),"1/4"" black rod",Solid Polymer/Fabric,101.325,17.7,17.5,0.1999999999999993,82.3,0.27,0.0,20.0,0.0,0.6514657980456027,30.7,Extinction,1.0,14.0,13.0,1,Warning
+BASS2_P2,BASS-II (PSI-25),"1/4"" black rod",Solid Polymer/Fabric,101.325,17.4,17.2,0.1999999999999993,82.6,0.44,0.0,20.0,0.0,0.6600660066006601,30.3,Extinction,14.0,26.0,12.0,1,Warning
+BASS2_P3a,BASS-II (PSI-25),"1/4"" clear rod",Solid Polymer/Fabric,101.325,17.7,17.4,0.3000000000000007,82.3,0.27,0.0,20.0,0.0,0.6578947368421053,30.4,Extinction,2.0,33.0,31.0,1,Warning
+BASS2_P3b,BASS-II (PSI-25),1/4 clear rod,Solid Polymer/Fabric,101.325,17.4,16.8,0.5999999999999979,82.6,0.51,0.0,20.0,0.0,0.6600660066006601,30.3,Extinction,33.0,79.0,46.0,1,Warning
+BASS2_P4,BASS-II (PSI-25),"3/8"" black rod",Solid Polymer/Fabric,101.325,18.5,17.1,1.3999999999999986,81.5,0.62,0.0,20.0,0.0,0.6734006734006734,29.7,Smoldering/CO Spike,64.0,493.0,429.0,2,Critical
+BASS2_P5,BASS-II (PSI-25),"0.5"" black rod",Solid Polymer/Fabric,101.325,19.3,17.6,1.6999999999999993,80.7,0.32,0.0,20.0,0.0,0.6389776357827476,31.3,Smoldering/CO Spike,0.0,525.0,525.0,2,Critical
+BASS2_P6,BASS-II (PSI-25),"1/4"" black rod",Solid Polymer/Fabric,101.325,18.9,18.5,0.3999999999999986,81.1,0.3,0.0,20.0,0.0,1.234567901234568,16.2,Extinction,0.0,64.0,64.0,2,Critical
+BASS2_P8,BASS-II (PSI-25),"3/8"" black rod",Solid Polymer/Fabric,101.325,16.4,16.3,0.09999999999999787,83.6,0.72,0.0,20.0,0.0,3.0303030303030303,6.6,Extinction,44.0,69.0,25.0,2,Critical
+BASS2_P9,BASS-II (PSI-25),"0.5"" black rod",Solid Polymer/Fabric,101.325,17.6,17.1,0.5,82.4,1.67,0.0,20.0,0.0,1.3513513513513513,14.8,Extinction,525.0,535.0,10.0,2,Critical
+BASS2_P10,BASS-II (PSI-25),"1/4"" black rod",Solid Polymer/Fabric,101.325,17.0,16.4,0.6000000000000014,83.0,0.29,0.0,20.0,0.0,0.9049773755656108,22.1,Extinction,2.0,44.0,42.0,2,Critical
+BASS2_P12,BASS-II (PSI-25),"3/8"" black rod",Solid Polymer/Fabric,101.325,17.5,16.8,0.6999999999999993,82.5,0.29,0.0,20.0,0.0,0.7326007326007326,27.3,Extinction,2.0,57.0,55.0,1,Warning
+BASS2_P13a,BASS-II (PSI-25),"0.5"" black rod",Solid Polymer/Fabric,101.325,20.7,19.1,1.5999999999999979,79.3,0.36,0.0,20.0,0.0,0.7843137254901961,25.5,Smoldering/CO Spike,38.0,450.0,412.0,2,Critical
+BASS2_P13b,BASS-II (PSI-25),"0.5"" black rod",Solid Polymer/Fabric,101.325,20.6,20.2,0.40000000000000213,79.4,0.41,0.0,20.0,0.0,2.127659574468085,9.4,Extinction,5.0,72.0,67.0,2,Critical
+BASS2_P14,BASS-II (PSI-25),1/4 blac rod,Solid Polymer/Fabric,101.325,18.4,18.0,0.3999999999999986,81.6,0.34,0.0,20.0,0.0,1.234567901234568,16.2,Extinction,3.0,90.0,87.0,2,Critical
+BASS2_P15,BASS-II (PSI-25),1/4 black rod,Solid Polymer/Fabric,101.325,18.0,17.5,0.5,82.0,0.62,0.0,20.0,0.0,1.1764705882352942,17.0,Extinction,90.0,108.0,18.0,2,Critical
+BASS2_P16,BASS-II (PSI-25),"1/4"" black rod",Solid Polymer/Fabric,101.325,18.2,17.4,0.8000000000000007,81.8,0.3,0.0,20.0,0.0,1.5503875968992247,12.9,Extinction,0.0,56.0,56.0,2,Critical
+BASS2_P17,BASS-II (PSI-25),"1/4""  black rod",Solid Polymer/Fabric,101.325,16.8,16.5,0.3000000000000007,83.2,0.95,0.0,20.0,0.0,1.075268817204301,18.6,Extinction,57.0,68.0,11.0,2,Critical
+BASS2_P18,BASS-II (PSI-25),"1/4"" black rod",Solid Polymer/Fabric,101.325,20.0,19.0,1.0,80.0,0.34,0.0,20.0,0.0,0.7142857142857143,28.0,Extinction,1.0,26.0,25.0,1,Warning
+BASS2_P19,BASS-II (PSI-25),"1/4"" black rod",Solid Polymer/Fabric,101.325,17.5,16.7,0.8000000000000007,82.5,0.9,0.0,20.0,0.0,0.7168458781362007,27.9,Extinction,54.0,94.0,40.0,1,Warning
+BASS2_P20,BASS-II (PSI-25),"1/4"" black rod",Solid Polymer/Fabric,101.325,19.0,18.2,0.8000000000000007,81.0,0.34,0.0,20.0,0.0,0.6430868167202572,31.1,Extinction,2.0,78.0,76.0,1,Warning
+BASS2_P21a,BASS-II (PSI-25),1/4 black rod,Solid Polymer/Fabric,101.325,16.3,16.3,0.0,83.7,0.96,0.0,20.0,0.0,3.508771929824561,5.7,Extinction,86.0,94.0,8.0,2,Critical
+BASS2_P21b,BASS-II (PSI-25),"1/4"" black rod",Solid Polymer/Fabric,101.325,16.3,16.3,0.0,83.7,1.0,0.0,20.0,0.0,14.285714285714286,1.4,Extinction,94.0,98.0,4.0,2,Critical
+BASS2_P22a,BASS-II (PSI-25),"3/8"" black rod",Solid Polymer/Fabric,101.325,20.8,0.6,20.2,79.2,0.32,0.0,20.0,0.0,2.4096385542168672,8.3,Extinction,4.0,4.0,0.0,2,Critical
+BASS2_P22b,BASS-II (PSI-25),"3/8"" black rod",Solid Polymer/Fabric,101.325,20.0,39.1,0.0,80.0,0.4,0.0,20.0,0.0,1.2903225806451613,15.5,Smoldering/CO Spike,0.0,239.0,239.0,2,Critical
+BASS2_P23,BASS-II (PSI-25),"3/8"" black rod",Solid Polymer/Fabric,101.325,18.2,17.0,1.1999999999999993,81.8,1.05,0.0,20.0,0.0,0.8264462809917356,24.2,Extinction,78.0,159.0,81.0,2,Critical
+BASS2_P24,BASS-II (PSI-25),"3/8"" black rod",Solid Polymer/Fabric,101.325,19.0,17.5,1.5,81.0,1.2,0.0,20.0,0.0,0.6493506493506493,30.8,Smoldering/CO Spike,26.0,260.0,234.0,2,Critical
+BASS2_P25,BASS-II (PSI-25),"3/8"" clear rod",Solid Polymer/Fabric,101.325,20.9,20.2,0.6999999999999993,79.1,0.38,0.0,20.0,0.0,0.8130081300813008,24.6,Smoldering/CO Spike,43.0,205.0,162.0,2,Critical
+BASS2_T1,BASS-II (PSI-25),2 cm SIBAL,Solid Polymer/Fabric,101.325,18.5,18.5,0.0,81.5,0.35,0.0,20.0,0.0,2.3529411764705883,8.5,Extinction,0.0,40.0,40.0,2,Critical
+BASS2_T2,BASS-II (PSI-25),2 cm SIBAL,Solid Polymer/Fabric,101.325,18.5,18.5,0.0,81.5,0.41,0.0,20.0,0.0,2.0,10.0,Extinction,40.0,78.0,38.0,2,Critical
+BASS2_T3,BASS-II (PSI-25),4 cm spherical section,Solid Polymer/Fabric,101.325,17.2,16.8,0.3999999999999986,82.8,0.42,0.0,40.0,0.0,2.4096385542168672,16.6,Extinction,45.0,113.0,68.0,2,Critical
+BASS2_T4,BASS-II (PSI-25),2 cm SIBAL,Solid Polymer/Fabric,101.325,18.7,18.7,0.0,81.3,0.44,0.0,20.0,0.0,2.061855670103093,9.7,Extinction,59.0,72.0,13.0,2,Critical
+BASS2_T5,BASS-II (PSI-25),2 cm SIBAL,Solid Polymer/Fabric,101.325,18.8,18.9,0.0,81.2,0.2,0.0,20.0,0.0,2.0,10.0,Extinction,2.0,41.0,39.0,2,Critical
+BASS2_T6,BASS-II (PSI-25),2 cm SIBAL,Solid Polymer/Fabric,101.325,18.8,18.8,0.0,81.2,0.24,0.0,20.0,0.0,1.7094017094017095,11.7,Extinction,39.0,77.0,38.0,2,Critical
+BASS2_T7,BASS-II (PSI-25),4 cm spherical section,Solid Polymer/Fabric,101.325,17.3,17.1,0.1999999999999993,82.7,0.32,0.0,40.0,0.0,1.3377926421404682,29.9,Extinction,49.0,140.0,91.0,2,Critical
+BASS2_T9,BASS-II (PSI-25),2 cm SIBAL,Solid Polymer/Fabric,101.325,16.4,16.4,0.0,83.6,0.3,0.0,20.0,0.0,4.166666666666667,4.8,Extinction,0.0,9.0,9.0,2,Critical
+BASS2_T10,BASS-II (PSI-25),2 cm SIBAL,Solid Polymer/Fabric,101.325,16.4,16.5,0.0,83.6,0.31,0.0,20.0,0.0,4.651162790697675,4.3,Extinction,9.0,14.0,5.0,2,Critical
+BASS2_T11,BASS-II (PSI-25),2 cm SIBAL,Solid Polymer/Fabric,101.325,17.1,17.0,0.10000000000000142,82.9,0.35,0.0,20.0,0.0,1.8348623853211008,10.9,Extinction,1.0,45.0,44.0,2,Critical
+BASS2_T12,BASS-II (PSI-25),2 cm SIBAL,Solid Polymer/Fabric,101.325,16.8,16.9,0.0,83.2,0.7,0.0,20.0,0.0,5.128205128205129,3.9,Extinction,113.0,117.0,4.0,2,Critical
+BASS2_T13,BASS-II (PSI-25),2 cm SIBAL,Solid Polymer/Fabric,101.325,17.5,17.6,0.0,82.5,0.19,0.0,20.0,0.0,3.6363636363636362,5.5,Extinction,2.0,12.0,10.0,2,Critical
+BASS2_T14,BASS-II (PSI-25),2 cm SIBAL,Solid Polymer/Fabric,101.325,16.9,16.9,0.0,83.1,0.7,0.0,20.0,0.0,1.680672268907563,11.9,Extinction,117.0,152.0,35.0,2,Critical
+BASS2_T15,BASS-II (PSI-25),2 cm SIBAL,Solid Polymer/Fabric,101.325,18.7,18.7,0.0,81.3,0.45,0.0,20.0,0.0,4.347826086956522,4.6,Extinction,72.0,102.0,30.0,2,Critical
+BASS2_T16,BASS-II (PSI-25),2 cm SIBAL,Solid Polymer/Fabric,101.325,17.6,17.5,0.10000000000000142,82.4,0.21,0.0,20.0,0.0,2.0,10.0,Extinction,17.0,41.0,24.0,2,Critical
+BASS2_T17,BASS-II (PSI-25),2 cm SIBAL,Solid Polymer/Fabric,101.325,16.9,16.9,0.0,83.1,0.72,0.0,20.0,0.0,2.4096385542168672,8.3,Extinction,152.0,190.0,38.0,2,Critical
+BASS2_T18,BASS-II (PSI-25),2 cm SIBAL,Solid Polymer/Fabric,101.325,17.4,17.4,0.0,82.6,0.36,0.0,20.0,0.0,4.081632653061225,4.9,Extinction,2.0,22.0,20.0,2,Critical
+BASS2_T19,BASS-II (PSI-25),1 cm SIBAL,Solid Polymer/Fabric,101.325,17.2,17.2,0.0,82.8,0.29,0.0,10.0,0.0,1.36986301369863,7.3,Extinction,1.0,20.0,19.0,2,Critical
+BASS2_T20,BASS-II (PSI-25),1 cm SIBAL,Solid Polymer/Fabric,101.325,17.2,17.2,0.0,82.8,0.31,0.0,10.0,0.0,0.8547008547008548,11.7,Extinction,20.0,34.0,14.0,2,Critical
+BASS2_T21,BASS-II (PSI-25),1 cm SIBAL,Solid Polymer/Fabric,101.325,17.2,17.2,0.0,82.8,0.31,0.0,10.0,0.0,0.6622516556291391,15.1,Extinction,34.0,45.0,11.0,1,Warning
+BASS2_T22,BASS-II (PSI-25),1 cm SIBAL,Solid Polymer/Fabric,101.325,17.1,17.0,0.10000000000000142,82.9,0.59,0.0,10.0,0.0,2.6315789473684212,3.8,Extinction,140.0,162.0,22.0,2,Critical
+BASS2_T23,BASS-II (PSI-25),2 cm Sibal   moved igniter,Solid Polymer/Fabric,101.325,17.2,17.3,0.0,82.8,0.32,0.0,20.0,0.0,0.9852216748768473,20.3,Extinction,45.0,49.0,4.0,2,Critical
+BASS2_T24,BASS-II (PSI-25),1 cm SIBAL   top side ign,Solid Polymer/Fabric,101.325,18.2,18.2,0.0,81.8,0.51,0.0,10.0,0.0,0.7692307692307693,13.0,Extinction,85.0,107.0,22.0,2,Critical
+BASS2_T25,BASS-II (PSI-25),2 cm SIBAL,Solid Polymer/Fabric,101.325,20.8,20.7,0.10000000000000142,79.2,0.36,0.0,20.0,0.0,2.6666666666666665,7.5,Extinction,0.0,17.0,17.0,2,Critical
+BASS2_T26,BASS-II (PSI-25),2 cm SIBAL,Solid Polymer/Fabric,101.325,20.8,20.7,0.10000000000000142,79.2,0.36,0.0,20.0,0.0,2.298850574712644,8.7,Extinction,0.0,24.0,24.0,2,Critical
+BASS2_T27,BASS-II (PSI-25),1 cm SIBAL,Solid Polymer/Fabric,101.325,20.7,20.6,0.09999999999999787,79.3,0.41,0.0,10.0,0.0,1.7241379310344829,5.8,Extinction,0.0,9.0,9.0,2,Critical
+BASS2_T28a,BASS-II (PSI-25),1 cm SIBAL,Solid Polymer/Fabric,101.325,20.7,0.9,19.8,79.3,0.41,0.0,10.0,0.0,5.2631578947368425,1.9,Extinction,0.0,0.0,0.0,2,Critical
+BASS2_T28b,BASS-II (PSI-25),1 cm SIBAL,Solid Polymer/Fabric,101.325,20.7,40.4,0.0,79.3,0.4,0.0,10.0,0.0,3.7037037037037033,2.7,Extinction,0.0,2.0,2.0,2,Critical
+BASS2_T29,BASS-II (PSI-25),1 cm SIBAL,Solid Polymer/Fabric,101.325,20.7,20.5,0.1999999999999993,79.3,0.41,0.0,10.0,0.0,1.6666666666666667,6.0,Extinction,0.0,10.0,10.0,2,Critical
+SAME_1,SAME (PSI-102),Teflon,Wire Insulation,101.325,21.0,21.0,0.0,79.0,0.04,0.0,2.0,0.0,0.03333333333333333,60.0,Thermal Pyrolysis,0.0,30.0,30.0,1,Warning
+SAME_2,SAME (PSI-102),Teflon,Wire Insulation,101.325,21.0,21.0,0.0,79.0,0.04,0.0,2.0,0.0,0.016666666666666666,60.0,Thermal Pyrolysis,0.0,15.0,15.0,1,Warning
+SAME_3,SAME (PSI-102),Teflon,Wire Insulation,101.325,21.0,21.0,0.0,79.0,0.04,0.0,2.0,0.0,0.03333333333333333,1200.0,Thermal Pyrolysis,0.0,30.0,30.0,1,Warning
+SAME_4,SAME (PSI-102),Teflon,Wire Insulation,101.325,21.0,21.0,0.0,79.0,0.04,0.0,2.0,0.0,0.03333333333333333,60.0,Thermal Pyrolysis,0.0,30.0,30.0,1,Warning
