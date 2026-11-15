@@ -1,5 +1,5 @@
 """
-Step 2 (Upgraded): Physics-Informed Feature Engineering & Dual ML Engine
+Physics-Informed Feature Engineering & Dual ML Engine
 Author: Space Apps 2026 Developer
 Project: Flame in Freefall - Predictive Space Habitat Fire Safety System
 """
@@ -76,12 +76,10 @@ def engineer_physics_features(df: pd.DataFrame) -> pd.DataFrame:
     """
     d = df.copy()
 
-    # 1. Dalton's Law: Oxygen Partial Pressure (kPa)
     d["o2_partial_pressure_kpa"] = d["pressure_kpa"] * (
         d["initial_o2_pct"] / 100.0
     )
 
-    # 2. Effective Gas Mixture Thermal Conductivity (W / m*K)
     d["gas_thermal_conductivity"] = (
         (d["inert_he_pct"] / 100.0) * 0.151
         + (d["inert_n2_pct"] / 100.0) * 0.026
@@ -89,24 +87,20 @@ def engineer_physics_features(df: pd.DataFrame) -> pd.DataFrame:
         + (d["initial_o2_pct"] / 100.0) * 0.0265
     )
 
-    # 3. Oxygen-to-Inert Diluent Ratio
     inert_sum = (
         d["inert_n2_pct"] + d["inert_he_pct"] + d["co2_initial_pct"]
     ).replace(0, 1.0)
     d["o2_to_inert_ratio"] = d["initial_o2_pct"] / inert_sum
 
-    # 4. Microgravity Droplet D^2-Law Scaling Features
     d["initial_size_sq_mm2"] = d["initial_size_mm"] ** 2
     d["theoretical_d2_burn_index"] = d["initial_size_sq_mm2"] / d[
         "o2_partial_pressure_kpa"
     ].replace(0, 1.0)
 
-    # 5. Toxic Smoldering Index (CO ppm per % ambient O2)
     d["toxic_smoldering_index"] = d["co_final_ppm"] / d[
         "initial_o2_pct"
     ].replace(0, 1.0)
 
-    # 6. Kinematic Residence Time Estimate (D0^2 / K for droplets, L / K for solids)
     safe_rate = d["burning_rate_mm2_s"].replace(0, 0.1)
     d["kinematic_burn_time_est"] = np.where(
         d["fuel_category"] == "Liquid Droplet",
@@ -114,7 +108,6 @@ def engineer_physics_features(df: pd.DataFrame) -> pd.DataFrame:
         d["initial_size_mm"] / safe_rate,
     )
 
-    # 7. Clean Chemical Fuel Family
     if "fuel_family" not in d.columns:
         source_col = "fuel_material" if "fuel_material" in d.columns else "fuel_category"
         d["fuel_family"] = d[source_col].apply(classify_fuel_family)
@@ -151,9 +144,6 @@ def train_and_export_models(
     feat_df = engineer_physics_features(raw_df)
     all_features = NUMERIC_FEATURES + CATEGORICAL_FEATURES
 
-    # =========================================================================
-    # ENGINE 1: MULTI-CLASS FIRE RISK CLASSIFIER (Safe vs. Warning vs. Critical)
-    # =========================================================================
     X_cls = feat_df[all_features]
     y_cls = feat_df["fire_risk_level"].astype(int)
 
@@ -182,7 +172,6 @@ def train_and_export_models(
         [("preprocessor", build_preprocessor()), ("classifier", clf_estimator)]
     )
 
-    # 5-Fold Stratified Cross-Validation across all 393 real NASA runs
     cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
     cv_scores = cross_val_score(clf_pipeline, X_cls, y_cls, cv=cv, scoring="accuracy")
 
@@ -191,7 +180,6 @@ def train_and_export_models(
     cls_acc = float(accuracy_score(y_test_c, y_pred_c))
     cls_f1 = float(f1_score(y_test_c, y_pred_c, average="weighted"))
 
-    print("=================================================================")
     print(f"[ENGINE 1] Fire Risk Classifier Trained ({engine_name})")
     print(f"Holdout Test Accuracy (79 runs) : {cls_acc * 100:.2f}%")
     print(f"5-Fold CV Mean Accuracy         : {cv_scores.mean() * 100:.2f}% (±{cv_scores.std()*100:.2f}%)")
@@ -203,9 +191,6 @@ def train_and_export_models(
         )
     )
 
-    # =========================================================================
-    # ENGINE 2: FLAME EXTINCTION THRESHOLD TIME REGRESSOR (seconds)
-    # =========================================================================
     active_burn_df = feat_df[feat_df["extinction_time_s"] <= 120.0].copy()
     X_reg = active_burn_df[all_features]
     y_reg = active_burn_df["extinction_time_s"].astype(float)
@@ -214,7 +199,6 @@ def train_and_export_models(
         X_reg, y_reg, test_size=0.20, random_state=42
     )
 
-    # RandomForestRegressor excels at sharp physical piecewise regimes (Liquid D^2 vs Solid L)
     reg_estimator = RandomForestRegressor(
         n_estimators=300, max_depth=12, min_samples_leaf=2, random_state=42
     )
@@ -228,13 +212,10 @@ def train_and_export_models(
     reg_mae = float(mean_absolute_error(y_test_r, y_pred_r))
     reg_r2 = float(r2_score(y_test_r, y_pred_r))
 
-    print("=================================================================")
-    print("[ENGINE 2] Extinction Time Regressor Trained (Physics-Guided RF)")
+    print("\n[ENGINE 2] Extinction Time Regressor Trained (Physics-Guided RF)")
     print(f"Mean Absolute Error (MAE): {reg_mae:.3f} seconds")
-    print(f"R-Squared (R2) Score     : {reg_r2:.4f}")
-    print("=================================================================")
+    print(f"R-Squared (R2) Score     : {reg_r2:.4f}\n")
 
-    # Export serialized weights & metrics
     clf_path = os.path.join(model_dir, "fire_risk_classifier.pkl")
     reg_path = os.path.join(model_dir, "extinction_time_regressor.pkl")
     metrics_path = os.path.join(model_dir, "model_metrics.json")

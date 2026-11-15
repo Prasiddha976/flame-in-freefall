@@ -17,16 +17,12 @@ from train_dual_ml_engine import (
 
 
 def run_validation_suite():
-    print("=================================================================")
-    print("   FLAME IN FREEFALL — DUAL ML MODEL VALIDATION & AUDIT SUITE    ")
-    print("=================================================================\n")
+    print("FLAME IN FREEFALL — DUAL ML MODEL VALIDATION & AUDIT SUITE\n")
 
-    # 1. Load saved .pkl model pipelines
     clf = joblib.load("models/fire_risk_classifier.pkl")
     reg = joblib.load("models/extinction_time_regressor.pkl")
     print("[CHECK 1] Serialized .pkl pipelines loaded successfully.\n")
 
-    # 2. Reconstruct exact unseen 20% NASA test set (79 runs)
     raw_df = pd.read_csv("organized_data/master_microgravity_fires.csv")
     feat_df = engineer_physics_features(raw_df)
     all_features = NUMERIC_FEATURES + CATEGORICAL_FEATURES
@@ -48,7 +44,6 @@ def run_validation_suite():
     )
     print(cm_df)
 
-    # Verify zero Critical fires were misclassified as Safe
     catastrophic_misses = cm[2, 0]
     print(
         f"\n-> Catastrophic False Negatives (Critical predicted as Safe): {catastrophic_misses} / {cm[2].sum()}"
@@ -58,7 +53,6 @@ def run_validation_suite():
     ), "SAFETY FAILURE: Critical fire misclassified as Safe!"
     print("-> [PASS] Zero Critical fires misclassified as Safe!\n")
 
-    # 3. Physics Counterfactual Stress Tests
     print("[CHECK 3] Thermodynamic & Combustion Physics Stress Tests:")
     scenarios = pd.DataFrame(
         [
@@ -131,7 +125,6 @@ def run_validation_suite():
             f"  * {row['scenario']:<42} -> {label:<8} ({conf:5.1f}% conf) | Est. Extinction: {t_ext:5.2f}s"
         )
 
-    # 4. Real NASA Holdout Spot-Check
     print("\n[CHECK 4] Real NASA ISS Holdout Spot-Check (Actual vs. Predicted):")
     sample_idx = X_test_c.index[:6]
     spot_df = feat_df.loc[sample_idx].copy()
@@ -147,9 +140,7 @@ def run_validation_suite():
             f"BurnTime: Actual={r['extinction_time_s']:5.1f}s vs Pred={spot_pred_reg[idx_pos]:5.1f}s"
         )
 
-    print("\n=================================================================")
-    print("[ALL VALIDATION CHECKS PASSED] Models are flight-ready for UI.")
-    print("=================================================================")
+    print("\n[ALL VALIDATION CHECKS PASSED] Models are flight-ready for UI.")
 
 
 if __name__ == "__main__":

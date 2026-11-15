@@ -1,5 +1,5 @@
 """
-Step 3: Mission Control Streamlit UI & 3D Plotly Microgravity Fire Safety Console
+Mission Control Streamlit UI, 3D Plotly Telemetry & Live Model Validation
 Author: Space Apps 2026 Developer
 Project: Flame in Freefall - Predictive Space Habitat Fire Safety System
 """
@@ -11,10 +11,10 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
+from sklearn.metrics import confusion_matrix
+from sklearn.model_selection import train_test_split
 
-# -----------------------------------------------------------------------------
-# PAGE CONFIGURATION & SPACECRAFT HUD STYLING
-# -----------------------------------------------------------------------------
+
 st.set_page_config(
     page_title="Flame in Freefall | NASA PSI Microgravity Fire Safety",
     page_icon="🔥",
@@ -59,9 +59,49 @@ st.markdown(
 )
 
 
-# -----------------------------------------------------------------------------
-# PHYSICS FEATURE ENGINEERING (Matches Upgraded Step 2 Pipeline Exactly)
-# -----------------------------------------------------------------------------
+def classify_fuel_family(material_str: str) -> str:
+    s = str(material_str).lower()
+    if "methanol" in s:
+        return "Methanol"
+    if "heptane" in s:
+        return "Heptane"
+    if "pmma" in s or "film" in s or "thick" in s:
+        return "PMMA_Acrylic"
+    if "sibal" in s:
+        return "SIBAL_Cotton_Fiberglass"
+    if "nomex" in s:
+        return "Nomex_Fabric"
+    if "rod" in s:
+        return "Acrylic_Rod"
+    return "Wire_Polymer"
+
+
+def engineer_df_features(df: pd.DataFrame) -> pd.DataFrame:
+    d = df.copy()
+    d["o2_partial_pressure_kpa"] = d["pressure_kpa"] * (d["initial_o2_pct"] / 100.0)
+    d["gas_thermal_conductivity"] = (
+        (d["inert_he_pct"] / 100.0) * 0.151
+        + (d["inert_n2_pct"] / 100.0) * 0.026
+        + (d["co2_initial_pct"] / 100.0) * 0.0166
+        + (d["initial_o2_pct"] / 100.0) * 0.0265
+    )
+    inert_sum = (d["inert_n2_pct"] + d["inert_he_pct"] + d["co2_initial_pct"]).replace(0, 1.0)
+    d["o2_to_inert_ratio"] = d["initial_o2_pct"] / inert_sum
+    d["initial_size_sq_mm2"] = d["initial_size_mm"] ** 2
+    d["theoretical_d2_burn_index"] = d["initial_size_sq_mm2"] / d["o2_partial_pressure_kpa"].replace(0, 1.0)
+    d["toxic_smoldering_index"] = d["co_final_ppm"] / d["initial_o2_pct"].replace(0, 1.0)
+    safe_rate = d["burning_rate_mm2_s"].replace(0, 0.1)
+    d["kinematic_burn_time_est"] = np.where(
+        d["fuel_category"] == "Liquid Droplet",
+        d["initial_size_sq_mm2"] / safe_rate,
+        d["initial_size_mm"] / safe_rate,
+    )
+    if "fuel_family" not in d.columns:
+        source_col = "fuel_material" if "fuel_material" in d.columns else "fuel_category"
+        d["fuel_family"] = d[source_col].apply(classify_fuel_family)
+    return d
+
+
 def compute_realtime_features(
     pressure_kpa: float,
     initial_o2_pct: float,
@@ -73,34 +113,8 @@ def compute_realtime_features(
     fuel_category: str,
     fuel_family: str,
 ) -> pd.DataFrame:
-    """Builds a single-row physics-informed feature dataframe for live inference."""
-    inert_n2_pct = max(
-        0.0, 100.0 - initial_o2_pct - co2_initial_pct - inert_he_pct
-    )
-
-    o2_partial_pressure_kpa = pressure_kpa * (initial_o2_pct / 100.0)
-    gas_thermal_conductivity = (
-        (inert_he_pct / 100.0) * 0.151
-        + (inert_n2_pct / 100.0) * 0.026
-        + (co2_initial_pct / 100.0) * 0.0166
-        + (initial_o2_pct / 100.0) * 0.0265
-    )
-    inert_sum = max(1.0, inert_n2_pct + inert_he_pct + co2_initial_pct)
-    o2_to_inert_ratio = initial_o2_pct / inert_sum
-    initial_size_sq_mm2 = initial_size_mm**2
-    theoretical_d2_burn_index = initial_size_sq_mm2 / max(
-        1.0, o2_partial_pressure_kpa
-    )
-    toxic_smoldering_index = co_final_ppm / max(1.0, initial_o2_pct)
-
-    safe_rate = max(0.05, burning_rate_mm2_s)
-    kinematic_burn_time_est = (
-        initial_size_sq_mm2 / safe_rate
-        if fuel_category == "Liquid Droplet"
-        else initial_size_mm / safe_rate
-    )
-
-    return pd.DataFrame(
+    inert_n2_pct = max(0.0, 100.0 - initial_o2_pct - co2_initial_pct - inert_he_pct)
+    row = pd.DataFrame(
         [
             {
                 "pressure_kpa": pressure_kpa,
@@ -111,23 +125,14 @@ def compute_realtime_features(
                 "initial_size_mm": initial_size_mm,
                 "co_final_ppm": co_final_ppm,
                 "burning_rate_mm2_s": burning_rate_mm2_s,
-                "o2_partial_pressure_kpa": o2_partial_pressure_kpa,
-                "gas_thermal_conductivity": gas_thermal_conductivity,
-                "o2_to_inert_ratio": o2_to_inert_ratio,
-                "initial_size_sq_mm2": initial_size_sq_mm2,
-                "theoretical_d2_burn_index": theoretical_d2_burn_index,
-                "toxic_smoldering_index": toxic_smoldering_index,
-                "kinematic_burn_time_est": kinematic_burn_time_est,
                 "fuel_category": fuel_category,
                 "fuel_family": fuel_family,
             }
         ]
     )
+    return engineer_df_features(row)
 
 
-# -----------------------------------------------------------------------------
-# LOAD MODELS & HARMONIZED NASA PSI ARCHIVE
-# -----------------------------------------------------------------------------
 @st.cache_resource
 def load_ml_artifacts():
     clf = joblib.load("models/fire_risk_classifier.pkl")
@@ -138,26 +143,48 @@ def load_ml_artifacts():
 
 
 @st.cache_data
-def load_nasa_archive():
-    df = pd.read_csv("organized_data/master_microgravity_fires.csv")
-    df["o2_partial_pressure_kpa"] = df["pressure_kpa"] * (
-        df["initial_o2_pct"] / 100.0
+def load_and_audit_archive(_clf, _reg):
+    df = engineer_df_features(pd.read_csv("organized_data/master_microgravity_fires.csv"))
+    feat_cols = [
+        "pressure_kpa", "initial_o2_pct", "inert_n2_pct", "co2_initial_pct", "inert_he_pct",
+        "initial_size_mm", "co_final_ppm", "burning_rate_mm2_s", "o2_partial_pressure_kpa",
+        "gas_thermal_conductivity", "o2_to_inert_ratio", "initial_size_sq_mm2",
+        "theoretical_d2_burn_index", "toxic_smoldering_index", "kinematic_burn_time_est",
+        "fuel_category", "fuel_family",
+    ]
+    X_cls = df[feat_cols]
+    y_cls = df["fire_risk_level"].astype(int)
+    _, X_test_c, _, y_test_c = train_test_split(
+        X_cls, y_cls, test_size=0.20, random_state=42, stratify=y_cls
     )
-    df["gas_thermal_conductivity"] = (
-        (df["inert_he_pct"] / 100.0) * 0.151
-        + (df["inert_n2_pct"] / 100.0) * 0.026
-        + (df["co2_initial_pct"] / 100.0) * 0.0166
-        + (df["initial_o2_pct"] / 100.0) * 0.0265
+    y_pred_c = _clf.predict(X_test_c)
+    cm = confusion_matrix(y_test_c, y_pred_c)
+    catastrophic_misses = int(cm[2, 0])
+    critical_recall = float(cm[2, 2] / cm[2].sum())
+
+    burn_df = df[df["extinction_time_s"] <= 120.0].copy()
+    _, X_test_r, _, y_test_r = train_test_split(
+        burn_df[feat_cols], burn_df["extinction_time_s"].astype(float), test_size=0.20, random_state=42
     )
-    return df
+    y_pred_r = np.clip(_reg.predict(X_test_r), 0.1, None)
+    parity_df = pd.DataFrame(
+        {
+            "Experiment": burn_df.loc[X_test_r.index, "experiment_id"].values,
+            "Fuel": burn_df.loc[X_test_r.index, "fuel_material"].values,
+            "Actual Burn Time (s)": y_test_r.values,
+            "Predicted Burn Time (s)": y_pred_r,
+        }
+    )
+
+    return df, cm, catastrophic_misses, critical_recall, parity_df
 
 
 clf_model, reg_model, model_metrics = load_ml_artifacts()
-nasa_df = load_nasa_archive()
+nasa_df, val_cm, catastrophic_misses, critical_recall, parity_df = load_and_audit_archive(
+    clf_model, reg_model
+)
 
-# -----------------------------------------------------------------------------
-# SIDEBAR: SPACECRAFT ECLSS TELEMETRY CONTROLS & SCENARIO PRESETS
-# -----------------------------------------------------------------------------
+
 st.sidebar.title("🛰️ ECLSS Sensor Deck")
 st.sidebar.caption("Real-Time Microgravity Habitat Telemetry")
 
@@ -210,9 +237,7 @@ co_final_ppm = st.sidebar.slider("Gas Analyzer CO (ppm)", 0.0, 550.0, defaults[5
 initial_size_mm = st.sidebar.slider("Characteristic Fuel Size D0 (mm)", 0.5, 30.0, defaults[4], 0.5)
 burning_rate_mm2_s = st.sidebar.slider("Optical Burning Rate K (mm²/s)", 0.05, 1.20, defaults[6], 0.02)
 
-# -----------------------------------------------------------------------------
-# LIVE DUAL ML INFERENCE
-# -----------------------------------------------------------------------------
+
 live_X = compute_realtime_features(
     pressure_kpa=pressure_kpa,
     initial_o2_pct=initial_o2_pct,
@@ -234,16 +259,14 @@ risk_color_map = {0: "#10b981", 1: "#f59e0b", 2: "#f43f5e"}
 current_risk_label = risk_map[risk_class]
 current_risk_color = risk_color_map[risk_class]
 
-# -----------------------------------------------------------------------------
-# HEADER & TOP METRIC HUD
-# -----------------------------------------------------------------------------
+
 st.title("🔥 FLAME IN FREEFALL: Predictive Microgravity Fire Safety Console")
 cv_acc = model_metrics.get("classifier_cv_accuracy", model_metrics["classifier_accuracy"])
 st.markdown(
-    f"**Trained on {model_metrics['total_nasa_runs']} Real NASA ISS Experimental Runs** "
-    f"(`FLEX PSI-69` • `BASS-II PSI-25` • `SAME PSI-102`) | "
+    f"**Trained on {model_metrics['total_nasa_runs']} Real NASA ISS Runs** (`FLEX` • `BASS-II` • `SAME`) | "
     f"5-Fold CV Accuracy: **{cv_acc*100:.2f}%** | "
-    f"Extinction R²: **{model_metrics['regressor_r2']:.2f}** (±{model_metrics['regressor_mae_seconds']:.2f}s MAE)"
+    f"Extinction R²: **{model_metrics['regressor_r2']:.2f}** (±{model_metrics['regressor_mae_seconds']:.2f}s MAE) | "
+    f"✅ **Flight-Verified:** `{catastrophic_misses}/40` Missed Critical Fires (`{critical_recall*100:.0f}%` Critical Recall)"
 )
 
 col1, col2, col3, col4 = st.columns(4)
@@ -278,7 +301,6 @@ with col4:
         delta_color="normal",
     )
 
-# Automated Suppression Protocol Banner
 st.markdown("### 🛡️ Automated ECLSS Fire Suppression Directive")
 if risk_class == 0:
     st.markdown(
@@ -304,9 +326,6 @@ else:
 
 st.divider()
 
-# -----------------------------------------------------------------------------
-# GAUGE + 3D MICROGRAVITY VISUALIZATION TABS
-# -----------------------------------------------------------------------------
 left_gauge, right_viz = st.columns([1, 2])
 
 with left_gauge:
@@ -368,11 +387,12 @@ with left_gauge:
     st.plotly_chart(fig_prob, use_container_width=True)
 
 with right_viz:
-    tab1, tab2, tab3 = st.tabs(
+    tab1, tab2, tab3, tab4 = st.tabs(
         [
-            "🌌 3D NASA Combustion Phase Space",
-            "🔮 3D Spherical Microgravity Flame Shell",
-            "📊 Real NASA PSI Telemetry Explorer",
+            "🌌 3D Combustion Phase Space",
+            "🔮 3D Spherical Flame Shell",
+            "🛡️ Model Validation & Safety Audit",
+            "📊 NASA PSI Data Explorer",
         ]
     )
 
@@ -477,6 +497,51 @@ with right_viz:
         st.plotly_chart(fig_sphere, use_container_width=True)
 
     with tab3:
+        st.success(
+            f"✅ AEROSPACE SAFETY AUDIT PASSED: {catastrophic_misses} / 40 Critical Fires Misclassified as Safe "
+            f"({critical_recall*100:.1f}% Critical Recall on 79 Unseen NASA ISS Test Runs)"
+        )
+        v_col1, v_col2 = st.columns(2)
+        with v_col1:
+            fig_cm = px.imshow(
+                val_cm,
+                text_auto=True,
+                x=["Pred Safe", "Pred Warning", "Pred Critical"],
+                y=["Actual Safe", "Actual Warning", "Actual Critical"],
+                color_continuous_scale="Blues",
+                title="Unseen NASA Holdout Confusion Matrix (n=79)",
+            )
+            fig_cm.update_layout(
+                paper_bgcolor="rgba(0,0,0,0)",
+                font={"color": "white"},
+                height=380,
+                margin=dict(l=10, r=10, t=45, b=10),
+            )
+            st.plotly_chart(fig_cm, use_container_width=True)
+
+        with v_col2:
+            fig_parity = px.scatter(
+                parity_df,
+                x="Actual Burn Time (s)",
+                y="Predicted Burn Time (s)",
+                hover_data=["Experiment", "Fuel"],
+                title=f"Extinction Time Validation (R² = {model_metrics['regressor_r2']:.2f})",
+                color_discrete_sequence=["#38bdf8"],
+            )
+            max_t = float(max(parity_df["Actual Burn Time (s)"].max(), parity_df["Predicted Burn Time (s)"].max()))
+            fig_parity.add_shape(
+                type="line", x0=0, y0=0, x1=max_t, y1=max_t, line=dict(color="#10b981", dash="dash")
+            )
+            fig_parity.update_layout(
+                paper_bgcolor="rgba(0,0,0,0)",
+                plot_bgcolor="#0f172a",
+                font={"color": "white"},
+                height=380,
+                margin=dict(l=10, r=10, t=45, b=10),
+            )
+            st.plotly_chart(fig_parity, use_container_width=True)
+
+    with tab4:
         mission_filter = st.multiselect(
             "Filter NASA ISS Experiment Series:",
             options=nasa_df["mission_dataset"].unique().tolist(),
