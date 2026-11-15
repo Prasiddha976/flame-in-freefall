@@ -2,8 +2,8 @@
 
 Predictive fire safety system for microgravity habitats.
 
-- Live Mission Control App: [Launch Interactive Dashboard](https://YOUR-SUBDOMAIN.streamlit.app)
-- Video Briefing: [Watch Project Demo](https://youtu.be/YOUR-VIDEO-ID)
+- Live Mission Control App: [Launch Interactive Dashboard](https://flame-in-freefall-nasa.streamlit.app/)
+- Video Briefing: [Watch Project Demo](https://www.youtube.com/watch?v=NvrEwwqwaJw)
 - NASA Data Sources: NASA Physical Science Informatics (PSI) Archive - FLEX (PSI-69), BASS-II (PSI-25), and SAME (PSI-102)
 
 ## Background
